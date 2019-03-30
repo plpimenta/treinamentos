@@ -139,3 +139,67 @@ function exibirLogout(){
 function ocultarLogout(){
     $('#formata-link-sair').hide(300);
 }
+
+// #################### Alexandre Santos #####################
+
+
+    function exibirTabelaUsuario(){
+   $('#tabelaExibirUsuarios').show(300);
+        
+    }
+    function exibirEditarTabelaUsuario(){
+   $('#editarUsu').show(300);
+        $('#tabelaExibirUsuarios').hide(300);
+    }
+    
+    function fecharEditarUsuario(){
+   $('#editarUsu').hide(300);
+    exibirTabelaUsuario();
+   }
+   // DIVS TREINAMENTOS HISTORICO
+   function exibirTabelaTreinamentosHist(){
+       $('#editarHistoricoTabela').show(300);
+   }
+   
+   function exibirEditarTreinamentoHist(){
+       $('#editarHistoricoTabela').show(300);
+       $('#tabelaExibirTreinamentosHist').hide(300);
+   }
+   
+  function fecharTabelaTreinamentosHist(){
+      $('#tabelaExibirTreinamentosHist').hide(300);
+      exibirTabelaTreinamentosHist();
+  }
+  
+
+function pessoalHistorico(id){
+   exibirEditarTabelaUsuario();
+    // INSTANCIA XHTTP PARA AJAX //
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200 ){
+            document.getElementById("resultadoEditar").innerHTML = this.responseText;
+// alert(xhttp.responseText);
+        }
+    };
+    xhttp.open("GET","../ajax/ajax.php?pessoalHistEditar=1&id="+id);
+    xhttp.send();
+}
+
+
+
+
+
+function treinamentosHistorico(id){////    exibirEditarTreinamentoHist();
+    fecharTabelaTreinamentosHist();
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById("resultadoTreinamentosHist").innerHTML = this.responseText;
+        alert(xhttp.responseText);
+        }
+    };
+    xhttp.open("GET","../ajax/ajax.php?treinamentosHistorico=1&id="+id);
+    xhttp.send();
+    
+}
