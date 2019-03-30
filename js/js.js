@@ -70,6 +70,9 @@ function cursoInserirExibeFornecedor(){
     alert('valor selecionado e ' + cursoPossuiReciclagem);
 }
 
+
+
+//funcoes jquery
 function cursoInserirExibeReciclagem(){
     
     var reciclagem = document.getElementById('cursoPossuiReciclagem').value;

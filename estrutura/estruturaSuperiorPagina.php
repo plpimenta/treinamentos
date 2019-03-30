@@ -1,4 +1,9 @@
-<?php ?>
+<?php 
+# Gerenciamento de sessao #
+include '../controles/sessaoValida.php';
+require_once '../core/config.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,6 +34,12 @@
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
+    
+    <!-- PNotify -->
+    <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet"
+          
   </head>
   <body class="nav-md">
     <div class="container body">

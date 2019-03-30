@@ -39,7 +39,21 @@
     <!-- bootstrap-daterangepicker -->
     <script src="../vendors/moment/min/moment.min.js"></script>
     <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    
+    <!-- PNotify -->
+    <script src="../vendors/pnotify/dist/pnotify.js"></script>
+    <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script>
 
+     <!--js customizado-->
+    <script src="../js/js.js" type="text/javascript"></script>
+    <script src="../js/notificacoes.js" type="text/javascript"></script>
+    <script src="../js/crud.js" type="text/javascript"></script>
+    <script src="../js/menus.js" type="text/javascript"></script>
+    <script src="../js/validacoes.js" type="text/javascript"></script>
+    <script src="../js/formatacoes.js" type="text/javascript"></script>   
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
 	

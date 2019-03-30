@@ -1,7 +1,8 @@
 <?php ?>
 <div class="col-md-3 left_col">
     <div class="left_col scroll-view">
-        <div class="navbar nav_title" style="border: 0;padding-left: 10%;padding-top: 3.0%;background-color: #E6E6E6;padding-bottom: 22%;">
+        <!--<div class="navbar nav_title" style="border: 0;padding-left: 10%;padding-top: 3.0%;background-color: #E6E6E6;padding-bottom: 22%;">-->
+        <div class="navbar nav_title" >
             <a href="index.html" ></a></a>
         </div>
 
@@ -14,7 +15,7 @@
             </div>
             <div class="profile_info">
                 <span>Seja Bem vindo,</span>
-                <h2>Luiz Paulo</h2>
+                <h2><?php echo $row_usu_info['usuario_nome'];?></h2>
             </div>
         </div>
         <!-- /menu profile quick info -->
@@ -40,7 +41,7 @@
                 <ul class="nav side-menu">
                     <li><a><i class="fa fa-graduation-cap"></i> Treinamentos <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="#">Cadastrar</a></li>
+                            <li><a href="../paginas/treinamentoCadastrar.php">Cadastrar</a></li>
                             <li><a href="#">Gerenciar</a></li>
                           </ul>
                     </li>

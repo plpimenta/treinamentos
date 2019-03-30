@@ -312,15 +312,16 @@ function cursoGravar(){
     
     // PEGA DADOS FORMULARIO
     var cursoCodigo = 1;
-    var cursoNome = document.getElementById('cursoNome').value;
-    var cursoInstrutorOrigem = document.getElementById('cursoInstrutorOrigem').value;
-    var cursoCargaHorariaFormacao = document.getElementById('cursoCargaHorariaFormacao').value;
-    var cursoCargaHorariaReciclagem = document.getElementById('cursoCargaHorariaReciclagem').value;
-    var cursoValidadeTreinamento = document.getElementById('cursoValidadeTreinamento').value;
-    var cursoInstrutorExterno = document.getElementById('cursoInstrutorExterno').value;
-    var cursoInstrutorInterno = document.getElementById('cursoInstrutorInterno').value;
-    var cursoPossuiReciclagem = document.getElementById('cursoPossuiReciclagem').value;
-    var cursoCadastradoPor = document.getElementById('cursoCadastradoPor').value;
+    var cursoNome = $('#cursoNome').val();
+    var cursoInstrutorOrigem = $('#cursoInstrutorOrigem').val();
+    var cursoCargaHorariaFormacao = $('#cursoCargaHorariaFormacao').val();
+    var cursoCargaHorariaReciclagem = $('#cursoCargaHorariaReciclagem').val();
+    var cursoValidadeTreinamento = $('#cursoValidadeTreinamento').val();
+    var cursoPossuiReciclagem = $('#cursoPossuiReciclagem').val();
+    var cursoCadastradoPor = $('#cursoCadastradoPor').val();
+    
+    
+    
     
     
     // PEGA DADOS FORMULARIO

@@ -233,4 +233,15 @@ function selectDadosPessoalParaFormulario($conn){
     }
 }
 
+function selectTreinamentosReferencias($conn){
+    
+    try {
+        $exib=$conn->prepare('SELECT * FROM treinamentos_referencias WHERE treinamento_referencia_status = :status');
+        $exib->bindValue(":status",1);
+        $exib->execute();
+        return $exib;
+    } catch (Exception $ex) {
+        return $ex->getMessage();
+    }
+}
 ?>

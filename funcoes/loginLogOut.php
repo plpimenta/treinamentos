@@ -11,7 +11,6 @@ if($_POST['logar']){
   
   $valida=validaUsuarioSenha($conn,$login,$senha); 
   
-  
   if($valida->rowcount() > 0){
       
       # INICIALIZA SESSAO DO USUARIO #
