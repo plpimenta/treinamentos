@@ -233,4 +233,26 @@ function selectDadosPessoalParaFormulario($conn){
     }
 }
 
+
+###### Alexandre Santos###################
+function selectQuadroPessoal($conn){
+    $exib=$conn->prepare('SELECT * FROM `Pessoal` where Status = 1 LIMIT 150');
+       $exib->execute();
+      return $exib;
+}
+
+function selectTreinamentosHist($conn,$id){
+    if($id){
+    $exib=$conn->prepare("SELECT * FROM `treinamentos_historico` where status_treinamentos = 1 and treinamentos_id = :treinamentos_id ");
+      $exib->bindValue(":treinamentos_id",$id);
+       $exib->execute();
+      return $exib;
+} else{
+    $exib=$conn->prepare('SELECT * FROM `treinamentos_historico` where status_treinamentos = 1  LIMIT 10 ');
+       $exib->execute();
+      return $exib;
+}
+}
+
+
 ?>

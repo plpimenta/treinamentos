@@ -485,3 +485,180 @@ function treinamentoEditarGravar(){
     xhttp.open("GET","../ajax/ajax.php?treinamentoEditarGravar=1&dados="+dados);
     xhttp.send();
 }
+
+//Funçao Alexandre###### 
+
+
+
+function usuarioEditarGravar(){
+      var pessoal_id = document.getElementById('pessoal_id').value;
+    var estabelecimentoCod =  document.getElementById('estabelecimentoCod').value;
+    var estabelecimentoNome = document.getElementById('estabelecimentoNome').value;
+    var Matricula = document.getElementById('Matricula').value;
+    var Nome = document.getElementById('Nome').value;
+    var Data_admissao = document.getElementById('Data_admissao').value;
+    var Data_nascimento = document.getElementById('Data_nascimento').value;
+    var Cargo_codigo = document.getElementById('Cargo_codigo').value;
+    var Cargo_nome = document.getElementById('Cargo_nome').value;
+    var Codigo = document.getElementById('Codigo').value;
+    var Funcao_nome = document.getElementById('Funcao_nome').value;
+    var Centro_resultado_codigo = document.getElementById('Centro_resultado_codigo').value;
+    var Centro_resultado_nome = document.getElementById('Centro_resultado_nome').value;
+    var Atividade_periculosa = document.getElementById('Atividade_periculosa').value;
+    var Numero_horas = document.getElementById('Numero_horas').value;
+    var Sindicato_codigo = document.getElementById('Sindicato_codigo').value;
+    var Sindicato_razaosocial = document.getElementById('Sindicato_razaosocial').value;
+    var Sexo = document.getElementById('Sexo').value;
+    var Grau_instrucao_nome = document.getElementById('Grau_instrucao_nome').value;
+    var Deficiente = document.getElementById('Deficiente').value;
+    var CPF = document.getElementById('CPF').value;
+    var Chefia_imediata_matricula = document.getElementById('Chefia_imediata_matricula').value;
+    var Chefia_imediata_nome = document.getElementById('Chefia_imediata_nome').value;
+    var Email = document.getElementById('Email').value;
+    var CTPS_numero = document.getElementById('CTPS_numero').value;
+    var CTPS_serie = document.getElementById('CTPS_serie').value;
+    var PIS = document.getElementById('PIS').value;
+    var Identidade = document.getElementById('Identidade').value;
+    var Situacao = document.getElementById('Situacao').value;
+    var RUT = document.getElementById('RUT').value;
+  
+    
+    //Concatenar valores
+     var dados = "";
+     dados = dados.concat(pessoal_id,",");
+    dados = dados.concat(estabelecimentoCod,",");
+    dados = dados.concat(estabelecimentoNome,",");
+    dados = dados.concat(Matricula,",");
+    dados = dados.concat(Nome,",");
+    dados = dados.concat(Data_admissao,",");
+    dados = dados.concat(Data_nascimento,",");
+    dados = dados.concat(Cargo_codigo,",");
+    dados = dados.concat(Cargo_nome,",");
+    dados = dados.concat(Codigo,",");
+    dados = dados.concat(Funcao_nome,",");
+    dados = dados.concat(Centro_resultado_codigo,",");
+    dados = dados.concat(Centro_resultado_nome,",");
+    dados = dados.concat(Atividade_periculosa,",");
+    dados = dados.concat(Numero_horas,",");
+    dados = dados.concat(Sindicato_codigo,",");
+    dados = dados.concat(Sindicato_razaosocial,",");
+    dados = dados.concat(Sexo,",");
+    dados = dados.concat(Grau_instrucao_nome,",");
+    dados = dados.concat(Deficiente,",");
+    dados = dados.concat(CPF,",");
+    dados = dados.concat(Chefia_imediata_matricula,",");
+    dados = dados.concat(Chefia_imediata_nome,",");
+    dados = dados.concat(Email,",");
+    dados = dados.concat(CTPS_numero,",");
+    dados = dados.concat(CTPS_serie,",");
+    dados = dados.concat(PIS,",");
+    dados = dados.concat(Identidade,",");
+    dados = dados.concat(Situacao,",");
+    dados = dados.concat(RUT);
+    
+    
+     
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+            if( this.readyState == 4 && this.status == 200 ){
+if(this.responseText == 'true') {
+    alert(xhttp.responseText);
+ 
+//    notificacao('top', 'right', 'success', 'Usuario '+Nome+' gravado com sucesso!', 400, 'ti-face-smile');
+}else{
+   
+// notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar gravar os dados do usuário '+Nome+', verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
+            
+                }
+            }
+        };
+        xhttp.open("GET","../ajax/ajax.php?alterarUsuarioGravar=1&id="+dados);
+        xhttp.send();
+}
+
+function treinamentosEditarGravar(){
+    var treinamentos_matricula = document.getElementById('treinamentos_matricula').value;
+    var treinamentos_nome = document.getElementById('treinamentos_nome').value;
+    var treinamentos_admissao = document.getElementById('treinamentos_admissao').value;
+    var treinamentos_desc_funcao = document.getElementById('treinamentos_desc_funcao').value;
+    var treinamentos_turno = document.getElementById('treinamentos_turno').value;
+    var treinamentos_cc = document.getElementById('treinamentos_cc').value;
+    var treinamentos_centro_custo = document.getElementById('treinamentos_centro_custo').value;
+    var treinamentos_gerencia = document.getElementById('treinamentos_gerencia').value;
+    var treinamentos_responsavel = document.getElementById('treinamentos_responsavel').value;
+    var treinamentos_desc_curso = document.getElementById('treinamentos_desc_curso').value;
+    var treinamentos_horas = document.getElementById('treinamentos_horas').value;
+    var treinamentos_data_inicio = document.getElementById('treinamentos_data_inicio').value;
+    var treinamentos_emissao_conclusao = document.getElementById('treinamentos_emissao_conclusao').value;
+    var treinamentos_fornecedor = document.getElementById('treinamentos_fornecedor').value;
+    var treinamentos_cpf = document.getElementById('treinamentos_cpf').value;
+    var treinamentos_rg = document.getElementById('treinamentos_rg').value;
+    var treinamentos_validade = document.getElementById('treinamentos_validade').value;
+    var treinamentos_status = document.getElementById('treinamentos_status').value;
+    var treinamentos_referencia = document.getElementById('treinamentos_referencia').value;
+    var treinamentos_onda = document.getElementById('treinamentos_onda').value;
+    var treinamentos_atividade_especial = document.getElementById('treinamentos_atividade_especial').value;
+    var treinamentos_externo_interno = document.getElementById('treinamentos_externo_interno').value;
+    var treinamentos_necessario = document.getElementById('treinamentos_necessario').value;
+    var treinamentos_justificar = document.getElementById('treinamentos_justificar').value;
+    var treinamentos_obs = document.getElementById('treinamentos_obs').value;
+    var treinamentos_id = document.getElementById('treinamentos_id').value;
+    
+    //Concatenar
+    var dados = "";
+      dados = dados.concat(treinamentos_matricula,",");
+      dados = dados.concat(treinamentos_nome,",");
+      dados = dados.concat(treinamentos_admissao,",");
+      dados = dados.concat(treinamentos_desc_funcao,",");
+      dados = dados.concat(treinamentos_turno,",");
+      dados = dados.concat(treinamentos_cc,",");
+      dados = dados.concat(treinamentos_centro_custo,",");
+      dados = dados.concat(treinamentos_gerencia,",");
+      dados = dados.concat(treinamentos_responsavel,",");
+      dados = dados.concat(treinamentos_desc_curso,",");
+      dados = dados.concat(treinamentos_horas,",");
+      dados = dados.concat(treinamentos_data_inicio,",");
+      dados = dados.concat(treinamentos_emissao_conclusao,",");
+      dados = dados.concat(treinamentos_fornecedor,",");
+      dados = dados.concat(treinamentos_cpf,",");
+      dados = dados.concat(treinamentos_rg,",");
+      dados = dados.concat(treinamentos_validade,",");
+      dados = dados.concat(treinamentos_status,",");
+      dados = dados.concat(treinamentos_referencia,",");
+      dados = dados.concat(treinamentos_onda,",");
+      dados = dados.concat(treinamentos_atividade_especial,",");
+      dados = dados.concat(treinamentos_externo_interno,",");
+      dados = dados.concat(treinamentos_necessario,",");
+      dados = dados.concat(treinamentos_justificar,",");
+      dados = dados.concat(treinamentos_obs,",");
+      dados = dados.concat(treinamentos_id);
+    
+    //Início do Ajax
+ var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+            if( this.readyState == 4 && this.status == 200 ){
+                
+if(this.responseText == 'true') {
+//    notificacao('top', 'right', 'success', 'Treinamento '+treinamentos_nome+' gravado com sucesso!', 400, 'ti-face-smile');
+//                  alert(xhttp.responseText); 
+}else{
+// notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar gravar os dados do Treinamento '+treinamentos_nome+', verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
+              
+                }
+            }
+        };
+        xhttp.open("GET","../ajax/ajax.php?treinamentosEditarGravar1=1&id="+dados);
+        xhttp.send();
+}
+    
+    
+    
+    
+
+
+
+
+
+
+
+//Fim Funçao Alexandre
