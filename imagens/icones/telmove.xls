@@ -1,0 +1,1066 @@
+<div class="alert alert-success" role="alert">Total de ligações encontradas: <span style="font-size:16px;">75</span></div><table class="table table-condensed" id="relatorios">
+                <thead>
+                    <tr class="tabela-titulo">
+                        <th></th>
+                        <th>Data e Hora</th>
+                        <th>Origem</th>
+                        <th>Destino</th>
+                        <th>Setor</th>
+                        <th>Duração</th>
+                        <th>Tipo</th>
+                        <th>Status</th>
+                        <th>Ação</th>
+                        <th>Gravação</th>
+                    </tr>
+                </thead>
+             
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 19:23:08</td>
+                                <td>1101</td>
+                                <td>1000</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:10</td>
+                                <td></td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1101-1527546188.359.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 19:18:46</td>
+                                <td>1101</td>
+                                <td>bloqueado</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:09</td>
+                                <td>Especiais</td>
+                                <td>Atendida</td>
+                                <td></td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 19:18:18</td>
+                                <td>1101</td>
+                                <td>10314</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:12</td>
+                                <td>Especiais</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1101-1527545898.354.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 19:17:43</td>
+                                <td>1101</td>
+                                <td>restricao</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:10</td>
+                                <td>Especiais</td>
+                                <td>Atendida</td>
+                                <td></td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 19:09:53</td>
+                                <td>1306</td>
+                                <td>1500</td>
+                                <td>Cadastro</td>
+                                <td>00:00:16</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 19:01:52</td>
+                                <td>1306</td>
+                                <td>restricao</td>
+                                <td>Cadastro</td>
+                                <td>00:00:06</td>
+                                <td>Especiais</td>
+                                <td>Atendida</td>
+                                <td></td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:57:14</td>
+                                <td>1120</td>
+                                <td>1101</td>
+                                <td>Rastreamento</td>
+                                <td>00:03:04</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527544634.340.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:54:11</td>
+                                <td>1201</td>
+                                <td>1101</td>
+                                <td>Suporte</td>
+                                <td>00:02:59</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527544451.335.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:53:05</td>
+                                <td>1120</td>
+                                <td>1201</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:10</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527544385.327.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:52:31</td>
+                                <td>1101</td>
+                                <td>1120</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:15</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1101-1527544351.322.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:52:17</td>
+                                <td>1102</td>
+                                <td>1306</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:54</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1102-1527544337.320.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:51:19</td>
+                                <td>1201</td>
+                                <td>1120</td>
+                                <td>Suporte</td>
+                                <td>00:00:16</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527544279.315.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:49:00</td>
+                                <td>1306</td>
+                                <td>1118</td>
+                                <td>Cadastro</td>
+                                <td>00:00:10</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1306-1527544140.309.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:48:31</td>
+                                <td>1500</td>
+                                <td>1118</td>
+                                <td>Gerencia</td>
+                                <td>00:00:13</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:47:16</td>
+                                <td>1120</td>
+                                <td>1117</td>
+                                <td>Rastreamento</td>
+                                <td>00:01:21</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527544036.299.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:45:57</td>
+                                <td>1201</td>
+                                <td>1101</td>
+                                <td>Suporte</td>
+                                <td>00:00:49</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527543957.296.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:45:46</td>
+                                <td>1201</td>
+                                <td>1120</td>
+                                <td>Suporte</td>
+                                <td>00:00:02</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527543946.293.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:41:20</td>
+                                <td>1117</td>
+                                <td>1101</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:49</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1117-1527543680.288.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:40:25</td>
+                                <td>1102</td>
+                                <td>1202</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:27</td>
+                                <td>Ramal</td>
+                                <td>Ocupado</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1102-1527543625.285.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:40:06</td>
+                                <td>1202</td>
+                                <td>1102</td>
+                                <td>Suporte</td>
+                                <td>00:00:10</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1202-1527543606.281.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:40:05</td>
+                                <td>1118</td>
+                                <td>1120</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:03</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1118-1527543605.279.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:38:22</td>
+                                <td>1102</td>
+                                <td>1305</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:11</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1102-1527543502.276.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:38:10</td>
+                                <td>1102</td>
+                                <td>1305</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:02</td>
+                                <td>Ramal</td>
+                                <td>Ocupado</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1102-1527543490.272.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:38:00</td>
+                                <td>1117</td>
+                                <td>1101</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:10</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1117-1527543480.268.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:37:49</td>
+                                <td>1101</td>
+                                <td>1117</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:05</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1101-1527543469.264.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:37:41</td>
+                                <td>1201</td>
+                                <td>1118</td>
+                                <td>Suporte</td>
+                                <td>00:00:08</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527543461.262.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:37:06</td>
+                                <td>1118</td>
+                                <td>1201</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:25</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1118-1527543426.259.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:36:44</td>
+                                <td>1201</td>
+                                <td>1118</td>
+                                <td>Suporte</td>
+                                <td>00:00:08</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527543404.256.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:35:51</td>
+                                <td>1305</td>
+                                <td>1118</td>
+                                <td>Cadastro</td>
+                                <td>00:00:28</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1305-1527543351.253.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:28:54</td>
+                                <td>1201</td>
+                                <td>1118</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:56</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527542920.247.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 18:28:39</td>
+                                <td>1120</td>
+                                <td>1201</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:14</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527542919.246.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 18:28:14</td>
+                                <td>1201</td>
+                                <td>1101</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:23</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527542856.240.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:27:35</td>
+                                <td>1120</td>
+                                <td>1201</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:37</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527542855.239.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">4</span></span></td>
+                                <td>28/05/2018 18:25:01</td>
+                                <td>1201</td>
+                                <td>1118</td>
+                                <td>Suporte</td>
+                                <td>00:00:26</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527542701.231.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">4</span></span></td>
+                                <td>28/05/2018 18:24:58</td>
+                                <td>1101</td>
+                                <td>1117</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:37</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1101-1527542698.229.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:23:54</td>
+                                <td>1120</td>
+                                <td>1201</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:10</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527542634.220.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:23:19</td>
+                                <td>1101</td>
+                                <td>1118</td>
+                                <td>Rastreamento</td>
+                                <td>00:01:17</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1101-1527542599.217.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:23:00</td>
+                                <td>1201</td>
+                                <td>1120</td>
+                                <td>Suporte</td>
+                                <td>00:00:24</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1201-1527542580.213.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:19:44</td>
+                                <td>1120</td>
+                                <td>1118</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:51</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527542384.210.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:17:52</td>
+                                <td>1101</td>
+                                <td>bloqueado</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:08</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td></td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:17:31</td>
+                                <td>1120</td>
+                                <td>1101</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:05</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527542251.205.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:17:07</td>
+                                <td>1101</td>
+                                <td>bloqueado</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:05</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td></td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:16:22</td>
+                                <td>1120</td>
+                                <td>1101</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:10</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527542182.200.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:15:01</td>
+                                <td>1120</td>
+                                <td>1118</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:05</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527542101.197.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:14:10</td>
+                                <td>1120</td>
+                                <td>1118</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:35</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1120-1527542050.194.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 18:13:21</td>
+                                <td>1118</td>
+                                <td>1120</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:38</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1118-1527542001.191.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 17:49:17</td>
+                                <td>1117</td>
+                                <td>04733382500</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:01</td>
+                                <td>DDD Celular</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1117-1527540557.188.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 17:48:48</td>
+                                <td>1117</td>
+                                <td>4733382500</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:01</td>
+                                <td>DDD Fixo</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1117-1527540528.185.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 17:48:28</td>
+                                <td>1117</td>
+                                <td>4733382500</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:01</td>
+                                <td>DDD Fixo</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1117-1527540508.182.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 17:47:31</td>
+                                <td>1117</td>
+                                <td>41996392948</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:29</td>
+                                <td>Local Celular</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1117-1527540451.179.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 17:46:55</td>
+                                <td>1117</td>
+                                <td>41996392948</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:21</td>
+                                <td>Local Celular</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1117-1527540415.176.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:32:07</td>
+                                <td>1117</td>
+                                <td>1129</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:02</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1117-1527535927.171.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:26:27</td>
+                                <td>1129</td>
+                                <td>1125</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:06</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1129-1527535587.168.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:24:04</td>
+                                <td>1129</td>
+                                <td>988902056</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:15</td>
+                                <td>Local Celular</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1129-1527535444.165.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:23:50</td>
+                                <td>1129</td>
+                                <td>1500</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:09</td>
+                                <td>Ramal</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:11:10</td>
+                                <td>1117</td>
+                                <td>1125</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:47</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1129-1527534670.153.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:10:23</td>
+                                <td>1125</td>
+                                <td>1117</td>
+                                <td>Rastreamento</td>
+                                <td>00:01:34</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1125-1527534623.149.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">8</span></span></td>
+                                <td>28/05/2018 16:09:20</td>
+                                <td>1129</td>
+                                <td>1125</td>
+                                <td>Rastreamento</td>
+                                <td>00:01:03</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1129-1527534560.146.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 16:06:53</td>
+                                <td>1125</td>
+                                <td>1117</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:56</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1125-1527534413.139.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 16:05:55</td>
+                                <td>1129</td>
+                                <td>1117</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:47</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1129-1527534289.135.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:04:48</td>
+                                <td>1125</td>
+                                <td>1129</td>
+                                <td>Rastreamento</td>
+                                <td>00:01:07</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1125-1527534288.134.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:04:32</td>
+                                <td>1129</td>
+                                <td>10315</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:10</td>
+                                <td>Especiais</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1129-1527534272.131.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:03:28</td>
+                                <td>1125</td>
+                                <td>1129</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:12</td>
+                                <td>Ramal</td>
+                                <td>Ocupado</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1125-1527534208.128.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 16:01:44</td>
+                                <td>1125</td>
+                                <td>1117</td>
+                                <td>Rastreamento</td>
+                                <td>00:01:00</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1125-1527534104.125.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">2</span></span></td>
+                                <td>28/05/2018 15:51:39</td>
+                                <td>10315</td>
+                                <td>1500</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:18</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 15:50:48</td>
+                                <td>1129</td>
+                                <td>10315</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:50</td>
+                                <td>Especiais</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1129-1527533448.118.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 15:44:18</td>
+                                <td>1500</td>
+                                <td>988902056</td>
+                                <td>Gerencia</td>
+                                <td>00:00:30</td>
+                                <td>Local Celular</td>
+                                <td>Não Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 15:42:16</td>
+                                <td>1101</td>
+                                <td>10315</td>
+                                <td>Rastreamento</td>
+                                <td>00:00:20</td>
+                                <td>Especiais</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.1.251/telefonia/gravacoes/monitor/telmove-1101-1527532936.112.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 15:26:09</td>
+                                <td>1500</td>
+                                <td>restricao</td>
+                                <td>Gerencia</td>
+                                <td>00:00:09</td>
+                                <td>Local Celular</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 13:10:36</td>
+                                <td>1401</td>
+                                <td>1402</td>
+                                <td>T.I</td>
+                                <td>00:04:54</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 13:09:29</td>
+                                <td>1402</td>
+                                <td>1401</td>
+                                <td>T.I</td>
+                                <td>00:01:00</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 13:08:39</td>
+                                <td>1402</td>
+                                <td>1401</td>
+                                <td>T.I</td>
+                                <td>00:00:35</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 13:07:19</td>
+                                <td>1401</td>
+                                <td>1402</td>
+                                <td>T.I</td>
+                                <td>00:01:14</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-escuro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 10:16:38</td>
+                                <td>1402</td>
+                                <td>1302</td>
+                                <td>T.I</td>
+                                <td>00:01:58</td>
+                                <td>Ramal</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src= controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="tabela-linha tabela-linha-cor-claro">
+                                <td><span class="btn btn-danger" style="width:30px;padding:0px 0px 0px 0px;" title="Está ligação possuí outras ocorrências"><span class="badge">3</span></span></td>
+                                <td>28/05/2018 08:26:10</td>
+                                <td>4130123552</td>
+                                <td>restricao</td>
+                                <td></td>
+                                <td>00:00:08</td>
+                                <td>Local Fixo</td>
+                                <td>Atendida</td>
+                                <td>Permitido</td>
+                                <td><audio src=http://192.168.0.55:8899/telefonia/gravacoes/monitor/telmove-4130123552-1527506770.92.wav controls id="controle-audio"></audio></td>
+                            </tr>
+                        </tbody></table>

@@ -1,0 +1,2177 @@
+<table class="table table-condensed">
+                            <thead>
+                                <tr class="tabela-titulo">
+                                    <th>Atendente</th>
+                                    <th>Cliente</th>
+                                    <th>Email</th>
+                                    <th>Contato</th>
+                                    <th>Cnpj</th>
+                                    <th>Fone</th>
+                                    <th>Celular</th>
+                                    <th>Tipo</th>
+                                    <th>Motivo</th>
+                                    <th>Data</th>
+                                    <th>Observações</th>
+                                </tr>
+                            </thead>
+                        <tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>SANCHES E VECCHIATE LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>03644587000402</td>
+                                        <td>(43) 3172-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>24/05/2018 11:07:08</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ZULEICA GONCALVES DA SILVA 060</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>19218710000110</td>
+                                        <td>(11) 2786-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>3</td>
+                                        <td>23/05/2018 15:41:26</td>
+                                        <td>Nao quis   conversa</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>WAGNER ALEXANDRE PAITAS PRIM -</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01687010000100</td>
+                                        <td>(41) 3013-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>23/05/2018 10:49:27</td>
+                                        <td>(41) 3013-4686 / (41) 3015-6370  cliente nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ALTERMEDIA LTDA - ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>04353238000151</td>
+                                        <td>4131529727</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>22/05/2018 10:56:47</td>
+                                        <td>Nao tem interesse....acabou de renovar  plano</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>COLEGIO PRISMA LTDA - ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>04240837000169</td>
+                                        <td>4331722000</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>3</td>
+                                        <td>22/05/2018 11:41:53</td>
+                                        <td>Nao tem interesse....fez  reclamaçoes</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>LAARBERG INFORMATICA LTDA - ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>09044208000187</td>
+                                        <td>4299911577</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>22/05/2018 14:14:19</td>
+                                        <td>Mudou de endereço.....e ja instalou a net</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>RENATO BRASIL GUARNERI E FILHO</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>04786520000122</td>
+                                        <td>4299107319</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>3</td>
+                                        <td>22/05/2018 14:23:18</td>
+                                        <td>Cliente  estava  bravo....  nao quis argumentar</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>N. NISHI MULTIMARCAS LTDA - ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>03868412000136</td>
+                                        <td>4198808213</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>22/05/2018 14:53:18</td>
+                                        <td>Esta  terminado de pagar o movel  24x    e esta  desativando a empresa....  nao tem interesse  no momento</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>SONIA MARIA DO ROZARIO - ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>10460826000197</td>
+                                        <td>(42) 3224-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>21/05/2018 16:51:24</td>
+                                        <td>NAO LOCALIZADO</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>KAREN LUANI LOPES MENDES - ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>17597369000126</td>
+                                        <td>4132461040</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>21/05/2018 09:14:30</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>LEOVALDO SERGIO FABRICIO 61362</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>13086933000195</td>
+                                        <td> (41) 3289</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>21/05/2018 09:22:30</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ASSOCIACAO DE PACIENTES RENAIS</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>26422061000130</td>
+                                        <td>(71) 3162-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>21/05/2018 13:38:33</td>
+                                        <td>Nao localizado  nos numeros em sistema</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>RICARDO LUIS VIEIRA-ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11119103000191</td>
+                                        <td>42) 3224-7</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>21/05/2018 14:38:35</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MANOEL LUIZ DIAS PEREIRA </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>21/05/2018 16:02:01</td>
+                                        <td></td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>INSTITUTO DE ENSINO SUPERIOR A</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>81908386000136</td>
+                                        <td>(41) 3069-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>18/05/2018 14:41:53</td>
+                                        <td>JA TEM COPEL  120 MEGA</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CA COMERCIOS DE PROTUDOS DE PE</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07028500000180</td>
+                                        <td>4133560345</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>18/05/2018 09:34:04</td>
+                                        <td>Ligado em varios numeros  e ninguem atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CONDOR SUPER CENTER LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>76189406000126</td>
+                                        <td>(41) 3047-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>18/05/2018 11:09:04</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>DOUGLAS RODRIGO CANTO SANTANA </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>10713888000163</td>
+                                        <td>(81) 3224-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>18/05/2018 11:20:59</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>IGOR TOSHIAKI MATSUSHITA </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11682344000144</td>
+                                        <td>(42) 3025-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>18/05/2018 14:26:11</td>
+                                        <td>JA TEM VIVO</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>KAIROS COMERCIO DE FRALDAS E C</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>22656836000181</td>
+                                        <td>1127868169</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>18/05/2018 11:28:29</td>
+                                        <td>Instalou a vivo  com outro  documento..e nao tem interesse  em outro  serviço</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CONCORDE ADMINISTRACAO DE BENS</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>75136127000131</td>
+                                        <td>4199938627</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>17/05/2018 17:04:10</td>
+                                        <td>Nao tem interesse....possui a copel</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>YSEE MIX DISTRIBUIDORA DE COSM</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>16877463000176</td>
+                                        <td>(41) 3026-</td>
+                                        <td>(41) 9975-0</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>17/05/2018 09:42:50</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CENTRO LATYNO ARTES LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07163739000163</td>
+                                        <td>(84) 9880-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>16/05/2018 16:52:35</td>
+                                        <td>Cliente pediu retorno</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>GOCIL SERVICOS DE VIGILANCIA E</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>50844182000902</td>
+                                        <td>(11) 2678-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>16/05/2018 17:18:04</td>
+                                        <td>Lilian  nao estava na hora.....  retornar</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ABERCOM IMP EXP E COMERCIO DE </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07099621000113</td>
+                                        <td>(41) 9997-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>16/05/2018 17:22:10</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>V P S INFORMATICA LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>05694934000194</td>
+                                        <td>(41) 4141-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>16/05/2018 17:29:16</td>
+                                        <td>Retornar  nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>INSTITUTO DE ENSINO SUPERIOR C</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01981577000194</td>
+                                        <td>4198701014</td>
+                                        <td>41987010144</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 11:27:16</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>NASSIB ABDO ABAGE FILHO - EPP</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>77701035000182</td>
+                                        <td>(041) 2233</td>
+                                        <td>(41) 99195-</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 14:29:01</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ASSOCIACAO DE CULTURA BIBLICA </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>76106046000151</td>
+                                        <td>4133787742</td>
+                                        <td>41996525037</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 10:32:56</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>PETROBRAS DISTRIBUIDORA SA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>34274233000447</td>
+                                        <td>51  332764</td>
+                                        <td>(51) 9991-5</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 10:18:14</td>
+                                        <td>Claudio  esta aposentado  e a fernanda  desconhece  do pedido...somente pessoal do  RJ...mas ela nao tinha contato para fornecer.....</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ARGELIA COMERCIO DE MATERIAIS </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00863782000192</td>
+                                        <td>4199677122</td>
+                                        <td>41 99677122</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 10:08:05</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ARGELIA COMERCIO DE MATERIAIS </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00863782000192</td>
+                                        <td>(41) 3033-</td>
+                                        <td>(41) 9967-7</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 09:07:44</td>
+                                        <td>Agendado retorno../// não atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MOREIRA</td>
+                                        <td> GOULART E MORAIS - CONS. ODONTOLOGICO S/S.</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>1341698800</td>
+                                        <td>55419881887</td>
+                                        <td></td>
+                                        <td>4</td>
+                                        <td>15/05/2018 14:33:59</td>
+                                        <td>3</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>BIOGARDEN PROJETOS E COMERCIO </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>08233923000103</td>
+                                        <td>5541988219</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>15/05/2018 14:39:22</td>
+                                        <td>Cliente nao tem interesse.....  ja tem  serviço da vivo  movel</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MAGTAB COMUNICACOES LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07757937000155</td>
+                                        <td>(41) 3527-</td>
+                                        <td>(41) 9918-5</td>
+                                        <td>Numero Não Existe</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 11:12:12</td>
+                                        <td>(41) 3527-2394  desconhece  empresa</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>COSTA E GROSSI ESCOLA DE IDIOM</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07750507000101</td>
+                                        <td>(41) 3087-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 16:32:08</td>
+                                        <td>(41) 3087-4700  eles nao atendem</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>O BOTECO MARINGÁ LTDA - ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>22917946000150</td>
+                                        <td>(44) 3266-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 16:31:35</td>
+                                        <td>Call ended   //  nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>DIPROAL COMERCIO DE MATERIAL A</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>75062943000148</td>
+                                        <td>41 3278630</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 15:38:47</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>VARGAS MOTOPEÇAS LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>08915227000179</td>
+                                        <td>(41) 3329-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>15/05/2018 15:34:19</td>
+                                        <td>Ja é cliente  vivo</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>NICOLE DE LIMA GOMES 080027799</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>27032236000166</td>
+                                        <td>(41) 9115-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>15/05/2018 15:05:33</td>
+                                        <td>Nao localizado.</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ASL VIDEO LOCADORA LTDA ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>08578475000171</td>
+                                        <td>4199114431</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>15/05/2018 15:04:49</td>
+                                        <td>Recusa</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td> REQUINTE SERVICOS LTDA ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>20981376000131</td>
+                                        <td>(27) 3068-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>11/05/2018 09:20:57</td>
+                                        <td>(27) 3068-6805 / (27) 3095-5010  LIGAR  MAIS TARDE   14:00    11/5</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CLAUDIA CRISTINA DIAS PADILHA </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>23148056000193</td>
+                                        <td>(51) 3013-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>11/05/2018 09:52:39</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>RODRIGUES E FERREIRA MOVEIS LT</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>16700115000129</td>
+                                        <td>(62) 3256-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>11/05/2018 10:29:34</td>
+                                        <td>Ligar mais tarde  14:00     11/5</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>JCS CORRETORA DE SEGUROS LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>92514702000101</td>
+                                        <td>(51) 3384-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>11/05/2018 11:23:24</td>
+                                        <td>Falar  com micael</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>SALES E ROLIM EMPREENDIMENTOS </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>86377058000174</td>
+                                        <td>31 3828760</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>11/05/2018 13:54:34</td>
+                                        <td>Ligar  depois do almoço   14:00   11/5</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>FERREIRA E NOGUEIRA LOTERIAS L</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>05198756000100</td>
+                                        <td>(31) 3046-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>11/05/2018 14:00:49</td>
+                                        <td>Somente  as 17 hrs</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>IRK CONTRUTORA E OBRAS LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>14221938000146</td>
+                                        <td>(41) 3564-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>11/05/2018 14:06:07</td>
+                                        <td>Recusa</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ACADEMIA ASSUNCAO E COURA LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>21969106000178</td>
+                                        <td>(47) 3278-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>10/05/2018 11:53:00</td>
+                                        <td>Ja instalou...e no  RS  nao precisa</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>SOLUCAO TREINAMENTOS PROFISSIO</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01664817000127</td>
+                                        <td>2798100201</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>10/05/2018 09:29:44</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>TECNOMEDICAL PRODUTOS MEDICOS </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>81178469000117</td>
+                                        <td>(41) 3352-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 14:28:57</td>
+                                        <td>Ligar mais tarde</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>TECNOLOGIA BANCARIA SA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>51427102000129</td>
+                                        <td>1199347908</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 13:58:05</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>COMERCIO DE MATERIAIS DE CONST</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>75035451000163</td>
+                                        <td>4132292412</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 13:47:03</td>
+                                        <td>Pediu retorno    14:30    9/5</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>LASERFLEX MATRIZES GRAFICAS LT</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00203587000136</td>
+                                        <td>(41) 3033-</td>
+                                        <td>(41) 9996-8</td>
+                                        <td>Numero Não Existe</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 13:38:41</td>
+                                        <td>(41) 3033-5040   numero residencia.........   nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ARNALDO SIMOES JUNIOR ODONTOLO</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>10540308000183</td>
+                                        <td>(41) 3023-</td>
+                                        <td></td>
+                                        <td>Numero Não Existe</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 13:28:01</td>
+                                        <td>Numero nao é da empresa</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>PARE OLHE ESCUTE BAR E RESTAUR</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>08097086000124</td>
+                                        <td>(41) 9999-</td>
+                                        <td></td>
+                                        <td>Numero Não Existe</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 13:20:04</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>PASTA BUONA IND E COM DE MASSA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>76676782000145</td>
+                                        <td>(41) 3253-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 13:14:32</td>
+                                        <td>Pediu retorno mais tarde</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>UNIPADRAO UNIFORMES PROFISSION</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07505609000161</td>
+                                        <td>(41) 9918-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>09/05/2018 11:36:35</td>
+                                        <td>Estao com fidelidade em outra empresa..e sem interesse em serviços  movel</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MITRI ASSESSORIA E CONSULTORIA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>05680502000124</td>
+                                        <td>(41) 3076-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>09/05/2018 11:30:18</td>
+                                        <td>EMILIANO PERNETA - 822; CENTRO - 80420080; CURITIBA - PR - (51985)VIVO2METALICO0000endereço sem cobertura.....e sem interesse em movel</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>COMERCIO DE MATERIAIS DE CONST</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>75035451000163</td>
+                                        <td>(41) 3229-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>09/05/2018 14:39:09</td>
+                                        <td>Cliente tem vivo...e nao tem interesse em outro plano....endereço:  R. JORGE FELIPE DAHER FILHO   nao existe</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>BAR E RESTAURANTE FAMAVUKI LTD</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>08184835000150</td>
+                                        <td>(41) 3015-</td>
+                                        <td></td>
+                                        <td>Numero Não Existe</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 14:53:52</td>
+                                        <td>(41) 3015-1076  numero de portaria  de condominio....  nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>YAMA SOUND AUTO CENTER LTDA  M</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>04254287000137</td>
+                                        <td>(41) 3585-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>1</td>
+                                        <td>09/05/2018 17:14:22</td>
+                                        <td>Empresa fechou</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>FERRERO COMERCIO E CONFECCOES </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>10697259000197</td>
+                                        <td>(41) 3015-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 17:05:55</td>
+                                        <td>Ligar  dia  10/5</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>OMORIS CLINICA DE SERVICOS MED</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>19268942000183</td>
+                                        <td>(43) 9991-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>1</td>
+                                        <td>09/05/2018 16:55:52</td>
+                                        <td>Cliente disse que mudou os planos   de instalar serviços....</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>AFJ BOLOS E DOCES LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>12457554000363</td>
+                                        <td>(11) 4955-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 16:28:28</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>GONCALVES RODRIGUES COMERCIO D</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>08189335000101</td>
+                                        <td>(41) 9965-</td>
+                                        <td></td>
+                                        <td>Atende</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 16:14:17</td>
+                                        <td>CLIENTE DISSE QUE EMPRESA  FOI DESATIVADA  HA  ANOS...E MESMO ASSIM  ELA NAO TEM INTERESSE DE ADQUIRIR  NO DOCUMENTO</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CURITIBA COMERCIO DE CALCADOS </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07952830000168</td>
+                                        <td>(41) 9992-</td>
+                                        <td></td>
+                                        <td>Numero Não Existe</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 16:06:42</td>
+                                        <td>CLIENTE DISSE QUE EMPRESA  FOI DESATIVADA  HÁ   1 ANO E MEIO...E NAO TEM INTERESSE  DE MOMENTO  EM NENHUMA CONTRATAÇÃO</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>POSITIVO INFORMATICA SA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>81243735000229</td>
+                                        <td>(41) 3316-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>09/05/2018 15:56:34</td>
+                                        <td>CLIENTE DISSE QUE EMPRESA  ESTA  NA    joao   betegaENDEREÇO INCORRETO</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CHLEBA MARKETING INTERATIVO LT</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07769006000258</td>
+                                        <td>41 3156-91</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>09/05/2018 15:10:28</td>
+                                        <td>Esta com outros  serviços</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>RENNE CAJAL ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01164825000104</td>
+                                        <td>(41) 9994-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>09/05/2018 15:00:53</td>
+                                        <td>Cliente gtem serviço da net....   nao tem interesse no momento.....foi dado retorno*</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MOURA FARMA LTDA ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11351088000102</td>
+                                        <td>4131553198</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>3</td>
+                                        <td>09/05/2018 11:17:42</td>
+                                        <td>Instalou a net....o mesmo  teve problemas  com  vivo  banda larga</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CAMINHO DO VINHO RESTAURANTE E</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00827157000195</td>
+                                        <td>(41) 3153-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 09:47:16</td>
+                                        <td>Cx</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MULLER E MOREIRA ADVOCACIA EMP</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>94998143000188</td>
+                                        <td>(51) 3224-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 09:42:06</td>
+                                        <td>Não atendem</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ZEN HARA ESTETICA E MASSAGEM L</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>12931516000139</td>
+                                        <td>(41) 3092-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 09:25:13</td>
+                                        <td>Nenhum contato no sistema atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CONDOMINIO DO EDIFICIO CAROL W</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>09258745000120</td>
+                                        <td>(31) 9994-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 09:17:53</td>
+                                        <td>Caixa postal</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>RENNE CAJAL ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01164825000104</td>
+                                        <td>(41) 3095-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 09:12:30</td>
+                                        <td>Renne  pediu retorno para ver os outros endereços a disponibilidade.</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>TEKUALY TECNICA INDUSTRIAL LTD</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01084855000100</td>
+                                        <td>(41) 3303-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>09/05/2018 09:11:37</td>
+                                        <td>Cliente  informa que endereços nos sistema nao existe mais.....  e estao num setor  industrial...com link dedicado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>AFJ BOLOS E DOCES LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>12457554000363</td>
+                                        <td> (11) 2087</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>09/05/2018 16:31:51</td>
+                                        <td>Retornar......estava  ocupada....  continuar insistindo</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ECONOLUX COMERCIO DE MAT ELETR</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00710212000162</td>
+                                        <td>4399951202</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>08/05/2018 10:25:49</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>NOVA ARAUCARIA PARTICIPACOES E</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01631199000119</td>
+                                        <td>(41) 3089-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>08/05/2018 10:49:46</td>
+                                        <td>Cliente tem serviço  em outro documento...</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>BIOGEN LABORATORIO DE BIOLOGIA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02049945000123</td>
+                                        <td>(41) 3334-</td>
+                                        <td>(41) 9922-3</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>08/05/2018 10:55:53</td>
+                                        <td>Nao localizado.</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>DEVALCI PEREIRA BARROS </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>08/05/2018 11:01:02</td>
+                                        <td></td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CALMON-LOCACOES DE EQUIPAMENTO</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>03498786000107</td>
+                                        <td>(41) 99623</td>
+                                        <td>41996233152</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>08/05/2018 11:06:57</td>
+                                        <td>(41) 99623-3152  nao atende em nenhum  num</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CERPOLO COMERCIO DE FORROS LTD</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>05592708000100</td>
+                                        <td>(41) 99979</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>08/05/2018 11:23:09</td>
+                                        <td>Ja tem vivo..e o movel</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>HELOISA SCHEER - ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>05216059000135</td>
+                                        <td>41 9922263</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>08/05/2018 11:19:12</td>
+                                        <td>(48) 99121-6362  e  (48) 3243-6977   desconhece  a empresa  HELOISA SCHEER - ME</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>A</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>08/05/2018 11:11:26</td>
+                                        <td></td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>PERCINIO EMPREENDIMENTOS E SER</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>05094674000116</td>
+                                        <td>(81) 9932-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>07/05/2018 09:21:02</td>
+                                        <td>Ja instalaram  a oi.....  á  1 mes  e estao  na fidelidade.</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CONCREPOXI ENGENHARIA LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>08064693000198</td>
+                                        <td>(85) 9867-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>3</td>
+                                        <td>07/05/2018 11:08:12</td>
+                                        <td>Inviabilidade tecnica.....  vivo  nao chega no endereço pedido.......outros endereços  nao consegui  falar com  bruno e joelma..quem atendeu  foi  david</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>SUN CYTI RESTAURANTE E CONFEIT</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02895600000190</td>
+                                        <td>(41) 3082-</td>
+                                        <td>9914-39656</td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 10:44:36</td>
+                                        <td>Restaurante  fica  na  av  iguacu....e ali  nao tem   disponibilidade  de linha.......</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>STRATUS VEICULOS LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>03609383000198</td>
+                                        <td>4133394019</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 10:37:13</td>
+                                        <td>Ningtuem atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MITRA DIOCESANA DE GUARAPUAVA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>75643148000224</td>
+                                        <td>42 3623128</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 10:04:54</td>
+                                        <td>Ligar  entre  11  as 13  falar  com everaldo</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ELETRO COMERCIAL REYMASTER LTD</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>80223324000128</td>
+                                        <td>(41) 3021-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 09:53:04</td>
+                                        <td>Cliente ja tem vivo...e nos outros endereços   SEM COBERTURA</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>AUTO POSTO BRUNO LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07787803000187</td>
+                                        <td>(41) 9880-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>1</td>
+                                        <td>07/05/2018 09:43:26</td>
+                                        <td>Cliente proprietario  disse que posto de gasolina   fechou......</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>IGREJA ALIANCA EVANGELICA EM C</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>03381820000169</td>
+                                        <td>(41) 3286-</td>
+                                        <td>(41) 9882-4</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 09:37:48</td>
+                                        <td>Nao localizado...call ended</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>SERGIO LUIZ INTERMEDIACOES IMO</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01500878000159</td>
+                                        <td>4199962456</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>1</td>
+                                        <td>07/05/2018 11:15:47</td>
+                                        <td>Nao quer..desligou na cara..disse que quando precisar  liga  na vivo</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>EDUARDO MARQUES ALVES</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>13651826000162</td>
+                                        <td>(51) 9988-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 11:30:44</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>SALAO DE BELEZA MARLY LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00934651000159</td>
+                                        <td>(41) 3262-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 13:57:11</td>
+                                        <td>Nao funiona  na  segunda feira......(41) 3262-0101   ligar  das  tercas  a sabado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>SERRA VERDE COMERCIO DE EMBALA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>04823859000151</td>
+                                        <td>(41) 8731-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>07/05/2018 13:43:43</td>
+                                        <td>Cnpj  desativado.....mas  ja tem vivo  outro documento</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CONDOMINIO DO EDIFICIO CAROL W</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>09258745000120</td>
+                                        <td>(31) 9994-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 13:37:53</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ACADEMIA ARENA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01243099000115</td>
+                                        <td>(41) 3029-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 13:26:28</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CURSO DE APERFEICOAMENTO AOS V</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>17146978000169</td>
+                                        <td> 32  36904</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 13:32:35</td>
+                                        <td>32  36904015   4001   pediu  retorno  14        7/5</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CIRANDA COMERCIO DE LIVROS E P</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02795742000186</td>
+                                        <td>(41) 3282-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>07/05/2018 13:10:42</td>
+                                        <td>Cliente nao tem interesse</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ANTONIO JEAN ABDO EIRELI ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00094066000279</td>
+                                        <td>4199996188</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 11:49:24</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>BARIGUI VEICULOS LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>79763884000196</td>
+                                        <td>(41) 3017-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>07/05/2018 11:41:07</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>KARINE CRISTIANE FERNANDES DE </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>28593571000104</td>
+                                        <td>(61) 9924-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>04/05/2018 11:47:51</td>
+                                        <td>Ja instalaram  com  cpf</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>JPL IMPORIO E BAR</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>22180243000191</td>
+                                        <td>(51) 3391-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 11:46:54</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ROAD TRUCK TRANSPORTES LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>26765825000190</td>
+                                        <td>(11) 9473-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 11:32:09</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>BKR  INDUSTRIA E COMERCIO DE P</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>12645132000150</td>
+                                        <td>(48) 3398-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 11:27:26</td>
+                                        <td>(43) 9109-2323  cliente nao quis transferir....ligação  caiu</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CAROLINE NUNES MALHEIROS</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>24551315000195</td>
+                                        <td>(71) 9998-</td>
+                                        <td>(71) 9925-0</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 09:53:55</td>
+                                        <td>Ninguem atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>OLIVEIRA ALBUQUERQUE IND E COM</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>21539292000105</td>
+                                        <td>(71) 2137-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 09:53:06</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CENTRAL MAX DISTRIBUIDORA LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>10267341000181</td>
+                                        <td>(41) 3272-</td>
+                                        <td>(41) 9997-3</td>
+                                        <td>Numero Não Existe</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 15:13:23</td>
+                                        <td>Numero nao faz mais parte da empresa.....  atendeu  no  (41) 9997-33594  disse que empresa  faliu  faz 2 anos</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>DANILLO JOSE OLIVEIRA CHAVES 0</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>29498701000184</td>
+                                        <td>(79) 9999-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 11:54:37</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>OLIVEIRA ALBUQUERQUE IND E COM</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>21539292000105</td>
+                                        <td>(71) 2137-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 11:57:37</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>BALUARTE REPRES E SERV DE CONS</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>07976485000100</td>
+                                        <td>41 9994214</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>1</td>
+                                        <td>04/05/2018 15:44:28</td>
+                                        <td>Cliente nao tem interesse  de momento</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>BERCON ENGENHARIA SA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>84974732000172</td>
+                                        <td>998335665</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>1</td>
+                                        <td>04/05/2018 15:30:45</td>
+                                        <td>Socio marcelo  diz que empresa  esta sem condiçoes  de contratar</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CENTRO DE TREINAMENTO PERSONAL</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02463627000104</td>
+                                        <td>(85) 3242-</td>
+                                        <td>(85) 9812-2</td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>04/05/2018 16:01:26</td>
+                                        <td>Cliente adna  ja possui vivo...  e no endereço disponivel....  foi desativado   Av. BR. DE STUDART (GVT: 23136)</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>COBARSA MOTOS LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11696408000670</td>
+                                        <td>(81) 3271-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 15:08:08</td>
+                                        <td>Cliente n ao atende...cai ligação   81 32716800</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>JEFERSON PRADO SOARES ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>03769100000175</td>
+                                        <td>(67) 9910-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>04/05/2018 14:21:58</td>
+                                        <td>Nao localizado</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ALAN NAZARIO ALBINO ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>17328844000169</td>
+                                        <td>(48) 9881-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>04/05/2018 14:14:07</td>
+                                        <td>Ja instalou  a vivo  no cpf</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>EE LUISA VIDAL BORGES DANIEL</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02585924002842</td>
+                                        <td>(67) 3314-</td>
+                                        <td></td>
+                                        <td>Atende</td>
+                                        <td>0</td>
+                                        <td>03/05/2018 14:47:23</td>
+                                        <td>Consegui contato com jeferson.....  e o mesmo disse que precisa de autorização do governo...para liberar a instalação.....valor    139</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ASSOCIACAO GRUPO BOTICARIO</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>76752708000160</td>
+                                        <td>(41) 3375-</td>
+                                        <td></td>
+                                        <td>Numero Não Existe</td>
+                                        <td>0</td>
+                                        <td>03/05/2018 14:36:33</td>
+                                        <td>Nao tem cobertura.....</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>GRUPO ESPIRITA DO EVANGELHO GE</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>22195820000119</td>
+                                        <td>(31) 3244-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>3</td>
+                                        <td>03/05/2018 14:20:41</td>
+                                        <td>Atraso  na instalação....  nao deu chance  de uma  nova  oportunidade.</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>EE LUISA VIDAL BORGES DANIEL</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02585924002842</td>
+                                        <td>(67) 3314-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>03/05/2018 13:45:36</td>
+                                        <td>Ligar mais tarde</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ALL LIGHT ELETRO E ELETRONICA </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01974018000157</td>
+                                        <td>(16) 3307-</td>
+                                        <td>16 99201814</td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>03/05/2018 11:59:58</td>
+                                        <td>Ja instalou a vivo</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>OZENI PERPETUA CORREA ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02041035000102</td>
+                                        <td>(31) 3385-</td>
+                                        <td></td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>03/05/2018 11:51:25</td>
+                                        <td>Pediu pra ligar  13:30  3/5</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ASENG VARIEDADES EIRELI ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>28076911000111</td>
+                                        <td>(55) 5199-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>03/05/2018 15:42:12</td>
+                                        <td>Ja tem  vivo</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>OZENI PERPETUA CORREA ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02041035000102</td>
+                                        <td>(31) 3385-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>03/05/2018 14:52:26</td>
+                                        <td>Tem serviço  claro..e nao tem  interesse</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MARIA IVANILDE ALBERTI SCUCATO</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>76625482000137</td>
+                                        <td>(41) 3252-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>03/05/2018 15:29:50</td>
+                                        <td>Pediu pra retornar  de manha á partir  9</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>TERESA DE FATIMA DE CHAVES BAT</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>15437265000129</td>
+                                        <td>(51) 3237-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>03/05/2018 17:11:59</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>INSTITUTO BRASIL DE DES MEDICO</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>23610257000160</td>
+                                        <td>(55) 3132-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>03/05/2018 16:21:58</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>EDUARDO TAVARES VOLTANI CARNES</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>25151641000178</td>
+                                        <td>(19) 9925-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>1</td>
+                                        <td>03/05/2018 16:16:43</td>
+                                        <td>Ja instalou vivo</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>BRINQUEDOTECA LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>27242340000185</td>
+                                        <td>11) 2361-5</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>03/05/2018 16:06:35</td>
+                                        <td>Ja instalou em outro  documento</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>CONCEITO FINO S DE BELEZA E ES</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>27246035000161</td>
+                                        <td>5139393197</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>03/05/2018 15:58:33</td>
+                                        <td>Ligar mais tarde</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>BRANDAO ASSOCIATES CONS EM REC</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>27256673000163</td>
+                                        <td>(11) 9930-</td>
+                                        <td></td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>03/05/2018 15:49:57</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>QUEBRA M C DE G ALIMENTICIOS L</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02453716000170</td>
+                                        <td>(21) 2494-</td>
+                                        <td>(21) 9733-7</td>
+                                        <td>Venda</td>
+                                        <td>0</td>
+                                        <td>02/05/2018 09:36:41</td>
+                                        <td>Cliente convergente com portabilidade.....  169</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MEIRELLES FARMA LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01260848000112</td>
+                                        <td>8499418179</td>
+                                        <td>84994181791</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>02/05/2018 09:49:21</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>REI AD ABBAS ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01076349000170</td>
+                                        <td>(11) 3998-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>3</td>
+                                        <td>02/05/2018 09:54:59</td>
+                                        <td>Cliente  esta com  a portabilidade  negada    este  numero  (11) 3998-6275  esta   cpf  do irmao</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>AVIAMENTOS GUTIERREZ</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00650450000120</td>
+                                        <td>(31) 9817-</td>
+                                        <td>(31) 9817-2</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>02/05/2018 10:31:12</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ARTE CORES COMERCIO DE ARTESAN</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00125628000202</td>
+                                        <td>(83) 3225-</td>
+                                        <td>(83) 9881-5</td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>02/05/2018 10:34:56</td>
+                                        <td>Somente  á tarde   15 hrs        2/5</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>AVIAMENTOS GUTIERREZ</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>00650450000120</td>
+                                        <td>(31) 9817-</td>
+                                        <td>(31) 9817-2</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>02/05/2018 11:22:21</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>MEIRELLES FARMA LTDA</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01260848000112</td>
+                                        <td>(84) 3213-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>02/05/2018 11:23:32</td>
+                                        <td>Cliente instalou em outro documento....  ja instalou  vivo</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ELIZANGELA PEREIRA TRINDADE ME</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>02524861000102</td>
+                                        <td>(87) 3867-</td>
+                                        <td></td>
+                                        <td>Recusa</td>
+                                        <td>2</td>
+                                        <td>02/05/2018 14:59:05</td>
+                                        <td>Cliente  desisitu da compra.....  vivo nao tem cobertura naquele local</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>ALL LIGHT ELETRO E ELETRONICA </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01974018000157</td>
+                                        <td>(16) 3307-</td>
+                                        <td>(16) 9922-7</td>
+                                        <td>Não Atende</td>
+                                        <td>0</td>
+                                        <td>02/05/2018 09:31:28</td>
+                                        <td>Nao atende</td>
+                                        
+                                    </tr>
+                                </tbody><tbody>
+                                    <tr class="tabela-linha">
+                                        <td>Claudio Santos</td>
+                                        <td>LANDER BAPTISTA COMERCIO DE AL</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11507253000172</td>
+                                        <td>(28) 3522-</td>
+                                        <td>(28) 9997-2</td>
+                                        <td>Agendado Retorno</td>
+                                        <td>0</td>
+                                        <td>02/05/2018 15:37:37</td>
+                                        <td>Pediu um retorno   3/5</td>
+                                        
+                                    </tr>
+                                </tbody></table>

@@ -1,0 +1,151 @@
+.menu{
+    cursor: pointer;
+
+}
+#menu-font{
+    font-size: 12px;
+}
+
+.menu:hover{
+    color: #F7BE81;
+}
+.usuario-boasvindas{
+    margin-left: 15%;
+}
+.menu-segundo-nivel{
+    margin-left: 10%;
+}
+.formatar-menus-links{
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 12px;
+
+}
+.formatar-menus-links:hover{
+    color: #151515;
+}
+.painel-titulo{
+    text-align: center;
+}
+.pesquisa-subtitulo{
+    text-align: center;
+}
+.pesquisa-corpo{
+    text-align: center;
+    font-size: 18px;
+}
+#login-painel{
+    padding-top: 2%;
+}
+/*formatacao tabelas*/
+.tabela-titulo{
+    background: #151515;
+    color: #fff;;
+}
+.tabela-titulo > th{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.table-formata-font{
+    font-size: 15px;
+}
+.tabela-linha{
+    
+}
+.tabela-linha > td{
+    text-align: left;
+    font-size: 11px;
+}
+.tabela-linha:hover{
+    background: #151515;
+    
+}
+.tabela-linha-centraliza{
+    text-align: center;
+}
+.tabela-celula-limite-caracter{
+    max-width: 18ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tabela-linha-escura{
+    background: #F6E3CE;
+}
+.tabela-linha-clara{
+    background: #F8E6E0;
+}
+.tabela-linha-escura > td{
+    background: #F6E3CE;
+    text-align: center;
+}
+.tabela-linha-clara > td{
+    background: #F8ECE0;
+    text-align: center;
+}
+
+.fa-eye{
+    cursor: pointer;
+}
+h4{
+    text-align: center;
+}
+.fa-times{
+    color: #FE2E2E;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ti-pencil{
+ cursor: pointer;   
+}
+.ti-pencil:hover{
+    color: #FA8258;
+}
+    
+.ti-close{
+    color: #FE2E2E;
+    cursor: pointer;
+}
+.ti-close:hover{
+    color: #FA5858;
+}
+
+#index-card-informacoes-container{
+    float: left;
+    width: 21%;
+    margin-left: 3%;
+    
+}
+#index-card-informacoes-dado{
+    text-align: center;
+    font-weight: bold;
+    font-size: 8px;
+}
+#index-card-informacoes-subtitulo{
+    text-align: right;
+    font-weight: bold;
+    color: #045FB4;
+    font-size: 8px;
+    /*text-shadow: 0px 2px 5px #333;*/
+}
+#index-card-informacoes-titulo{
+    color: #DF7401;
+    font-size: 8px;
+}  
+#icone-pesquisa{
+    float: right;
+    color: gray;
+    cursor: pointer;
+}
+#formata-link-sair{
+    margin-left: 35%;
+    color: gray;
+}
+#formata-link-sair:hover{
+    color: #000;;
+}
+#ola-usuario{
+    cursor: pointer;
+}
