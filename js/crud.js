@@ -639,11 +639,11 @@ function treinamentosEditarGravar(){
         xhttp.onreadystatechange = function(){
             if( this.readyState == 4 && this.status == 200 ){
                 
-if(this.responseText == 'true') {
-//    notificacao('top', 'right', 'success', 'Treinamento '+treinamentos_nome+' gravado com sucesso!', 400, 'ti-face-smile');
-//                  alert(xhttp.responseText); 
-}else{
-// notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar gravar os dados do Treinamento '+treinamentos_nome+', verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
+                if(this.responseText == 'true') {
+                //    notificacao('top', 'right', 'success', 'Treinamento '+treinamentos_nome+' gravado com sucesso!', 400, 'ti-face-smile');
+                //                  alert(xhttp.responseText); 
+                }else{
+                // notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar gravar os dados do Treinamento '+treinamentos_nome+', verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
               
                 }
             }
@@ -651,10 +651,10 @@ if(this.responseText == 'true') {
         xhttp.open("GET","../ajax/ajax.php?treinamentosEditarGravar1=1&id="+dados);
         xhttp.send();
 }
-    
-    
-    
-    
+
+
+
+
 
 
 
