@@ -127,10 +127,14 @@ function treinamentoGerenciarListar(alteradoPor){
     xhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200 ){
             document.getElementById('treinamentos-gerenciar-container-dados').innerHTML=this.responseText;
+            chamaDataTable ();
         }
     };
     xhttp.open("GET","../ajax/ajax.php?treinamentoGerenciarListar=1&alteradoPor="+alteradoPor);
     xhttp.send();
+}
+function chamaDataTable (){
+        $().DataTable();
 }
 
 function exibirLogout(){
@@ -203,3 +207,4 @@ function treinamentosHistorico(id){////    exibirEditarTreinamentoHist();
     xhttp.send();
     
 }
+

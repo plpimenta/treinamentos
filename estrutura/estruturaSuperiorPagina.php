@@ -35,6 +35,9 @@ require_once '../core/config.php';
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
     
+    <!--css customizado-->
+    <link href="../estilos/estilos.css" rel="stylesheet" type="text/css"/>
+    
     <!-- PNotify -->
     <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
     <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">

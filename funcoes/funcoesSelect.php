@@ -69,8 +69,19 @@ function selectTotalTreinamentosFormar($conn){
 }
 
 function selectTreinamentoPorId($conn,$id){
-    $exib=$conn->prepare('SELECT * FROM `treinamentos` WHERE treinamento_id = :id');
+    
+    $exib=$conn->prepare('SELECT treinamentos.*,treinamentos_referencias.treinamento_referencia_descricao FROM treinamentos INNER JOIN treinamentos_referencias ON 
+                            treinamentos_referencias.treinamento_referencia_id = treinamentos.treinamento_referencia WHERE treinamentos.treinamento_id = :id');
     $exib->bindValue(":id",$id);
+    $exib->execute();
+    $exib=$exib->fetch();
+    return $exib;
+}
+function selectTreinamentoPorCodigo($conn,$codigo){
+    
+    $exib=$conn->prepare('SELECT treinamentos.*,treinamentos_referencias.treinamento_referencia_descricao FROM treinamentos INNER JOIN treinamentos_referencias ON 
+                            treinamentos_referencias.treinamento_referencia_id = treinamentos.treinamento_referencia WHERE treinamentos.treinamento_codigo = :codigo');
+    $exib->bindValue(":codigo",$codigo);
     $exib->execute();
     $exib=$exib->fetch();
     return $exib;
@@ -253,7 +264,6 @@ function selectTreinamentosHist($conn,$id){
       return $exib;
 }
 }
-
 
 
 function selectTreinamentosReferencias($conn){

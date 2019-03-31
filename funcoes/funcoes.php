@@ -127,4 +127,17 @@ function funcaoGravarAtualizarUsuario($conn,$dados){
      $grava->execute();
      
  }
+ function funcaoConverteDadosObjetoParaMaiusculo($dados){
+     
+     foreach ($dados as $key => $value){
+         
+         if(is_string($value)){
+             $dados->$key= strtoupper($value);
+         }
+         
+     }
+        
+     return $dados;        
+     
+ }
 ?>

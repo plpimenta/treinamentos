@@ -46,10 +46,10 @@ function validaFornecedorJaCadastrado(){
             if( this.readyState == 4 && this.status == 200 ){
                 
                 if( this.responseText == "true"){
-                    notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Este CNPJ já está em uso, por favor verifique os dados do fornecedor em questão.', 600, 'ti-info-alt');
+                    notificacao('Cadastro de Fornecedor ','!!! ATENÇÃO !!! Este CNPJ já está em uso, por favor verifique os dados do fornecedor em questão.','error');
                     document.getElementById('fornecedorCadastrarGravar').disabled=true;
                 }else{
-                    notificacao('top', 'right', 'success', 'Códico cliente disponível. O cadastro ocorrerá normalmente', 600, 'ti-face-smile');
+                    notificacao('Cadastro de Fornecedor ','!!! Este CNPJ já está em uso, por favor verifique os dados do fornecedor em questão.','success');
                     document.getElementById('fornecedorCadastrarGravar').disabled=false;
                 }
                     
@@ -60,30 +60,22 @@ function validaFornecedorJaCadastrado(){
     xhttp.send();
     
 }
+
 function validaCursoJaCadastrado(){
-    //FUNCAO PARA VALIDAR SE FORNECEDOR COM O CODIGO INFORMADO JÁ CONSTA NA BASE //
     
-    var cursoCodigo = document.getElementById('cursoCodigo').value;
+    var curso = $('#cursoNome').val();
     
-    
-     if(cursoCodigo > 0 ){
-        
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function(){
-            if( this.readyState == 4 && this.status == 200 ){
-                
-                if( this.responseText == "true"){
-                    notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Já existe um curso cadastrado com este código.', 600, 'ti-info-alt');
-                    document.getElementById('cursoGravarBtn').disabled=true;
-                }else{
-                    notificacao('top', 'right', 'success', 'Códico curso disponível. O cadastro ocorrerá normalmente', 600, 'ti-face-smile');
-                    document.getElementById('cursoGravarBtn').disabled=false;
-                }
-                    
-            }
-        };
-    }
-    xhttp.open("GET","../ajax/ajax.php?validaCursoJaCadastrado=1&cursoCodigo="+cursoCodigo);
+    // INSTANACIA VARIAVEL XHTTP PARA CONSULTA BANCO
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+      if(this.readyState == 4 && this.status == 200 ){
+          
+          if(this.responseText == "true"){
+              notificacao('Cadastro de Curso ','!!! ATENÇÃO !!! Este nome já está em uso, por favor verifique os dados e tente novamente.','error');
+          }
+              
+      }  
+    };
+    xhttp.open("GET","../ajax/ajax.php?validaCursoJaCadastrado=1&curso="+curso);
     xhttp.send();
-    
 }

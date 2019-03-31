@@ -312,53 +312,47 @@ function cursoGravar(){
     
     // PEGA DADOS FORMULARIO
     var cursoCodigo = 1;
+    var cursoCadastradoPor = $('#cursoCadastradoPor').val();
     var cursoNome = $('#cursoNome').val();
-    var cursoInstrutorOrigem = $('#cursoInstrutorOrigem').val();
+    var cursoPossuiReciclagem = $('#cursoPossuiReciclagem').val();
     var cursoCargaHorariaFormacao = $('#cursoCargaHorariaFormacao').val();
     var cursoCargaHorariaReciclagem = $('#cursoCargaHorariaReciclagem').val();
+    var cursoReferencia = $('#cursoReferencia').val();
     var cursoValidadeTreinamento = $('#cursoValidadeTreinamento').val();
-    var cursoPossuiReciclagem = $('#cursoPossuiReciclagem').val();
-    var cursoCadastradoPor = $('#cursoCadastradoPor').val();
     
-    
-    
-    
-    
-    // PEGA DADOS FORMULARIO
-    
+   
     //CONCATENA DADOS PARA ENVIO
-    var dados="";
-    dados = dados.concat(cursoCodigo,";");
-    dados = dados.concat(cursoNome,";");
-    dados = dados.concat(cursoInstrutorOrigem,";");
-    dados = dados.concat(cursoCargaHorariaFormacao,";");
-    dados = dados.concat(cursoCargaHorariaReciclagem,";");
-    dados = dados.concat(cursoValidadeTreinamento,";");
-    dados = dados.concat(cursoInstrutorExterno,";");
-    dados = dados.concat(cursoInstrutorInterno,";");
-    dados = dados.concat(cursoPossuiReciclagem,";");
-    dados = dados.concat(cursoCadastradoPor);
-    //CONCATENA DADOS PARA ENVIO
-    
+    var dados='{"cursoCodigo":"1",';
+        dados+='"cursoCadastradoPor":"'+cursoCadastradoPor+'",';
+        dados+='"cursoNome":"'+cursoNome+'",';
+        dados+='"cursoPossuiReciclagem":"'+cursoPossuiReciclagem+'",';
+        dados+='"cursoCargaHorariaFormacao":"'+cursoCargaHorariaFormacao+'",';
+        dados+='"cursoCargaHorariaReciclagem":"'+cursoCargaHorariaReciclagem+'",';
+        dados+='"cursoReferencia":"'+cursoReferencia+'",';
+        dados+='"cursoValidadeTreinamento":"'+cursoValidadeTreinamento+'"}';
+        
+  
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
       if( this.readyState == 4 && this.status == 200 ){
           
          if(this.responseText == "true"){
+             
               // ZERA DADOS FORMULARIO //
                 cursoNome = document.getElementById('cursoNome').value="";
                 cursoCargaHorariaFormacao = document.getElementById('cursoCargaHorariaFormacao').value="";
                 cursoCargaHorariaReciclagem = document.getElementById('cursoCargaHorariaReciclagem').value="";
                 cursoValidadeTreinamento = document.getElementById('cursoValidadeTreinamento').value="";
+                $("#cursoPossuiReciclagem option:contains(Selecione)").attr('selected', true);
+                $("#cursoReferencia option:contains(Selecione)").attr('selected', true);
               // ZERA DADOS FORMULARIO //
 
               // EXIBE MENSAGEM DE SUCESSO AO USUARIO //
-              notificacao('top', 'right', 'success', 'Curso '+cursoNome+' gravado com sucesso!', 400, 'ti-face-smile');
+              notificacao('Cadastro de Treinamento ','Treinamento cadastrado com sucesso!!!','success');
                 
               
           }else{
-              notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar gravar o curso '+cursoNome+', verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
-           
+              notificacao('Cadastro de Treinamento ','!!! ATENÇÃO !!! Houve uma falha ao tentar gravar o treinamento','error');
           }
           
           
@@ -371,95 +365,66 @@ function cursoGravar(){
 
 function treinamentoDeletar(id,alteradoPor){
     
-    var dados="";
-    dados=dados.concat(id,";");
-    dados=dados.concat(alteradoPor);
+    var dados='{"id":'+id+',';
+        dados+='"alteradoPor":'+alteradoPor+'}';
     
-    
+      
     if(confirm('!!! ATENÇÃO !!! DESEJA REALMENTE DELETAR ESTE TREINAMENTO ?')){
         
-        // INSTANCIA XHTTP PARA AJAX //
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function(){
-          if(this.readyState == 4 && this.status == 200 ){
-              
-                if(this.responseText == "false"){
-                  
-                      notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar deletar o Treinamento, verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
-              
-                }else{
-               
-                      // MENSAGEM DE NOTIFICAÇÃO PARA O USUARIO //
-                      notificacao('top', 'right', 'success', 'Treinamento deletado com sucesso!', 400, 'ti-face-smile');
-                      
-                      treinamentoGerenciarListar(alteradoPor);
-                }
-          }  
-        };
-        xhttp.open("GET","../ajax/ajax.php?treinamentoDeletar=1&dados="+dados);
-        xhttp.send();
+        window.location='../ajax/ajax.php?treinamentoDeletar=1&dados='+dados;
         
     }
     
 }
 
-function treinamentoGerenciarEditar(id,alteradoPor){
+function treinamentoGerenciarEditar(codigo,alteradoPor){
     
     //CONCATENA DADOS PARA ENVIAR//
-    var dados = "";
-    dados = dados.concat(id,";");
-    dados = dados.concat(alteradoPor);
-    
+    var dados = '{"codigo":'+codigo+',';
+        dados+='"alteradoPor":'+alteradoPor+'}';
     
     // INSTANCIA XHHTP PARA AJAX //
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
       if(this.readyState == 4 && this.status == 200 ){
           
-          // OCULTA LISTA DE TREINAMENTOS
-          $('#treinamento-gerenciar-painel-lista').hide(300);
-          $('#treinamento-gerenciar-painel-container-edicao').show(300);
+          var retorno = JSON.parse(this.responseText);
           
-          document.getElementById('treinamento-gerenciar-painel-edicao').innerHTML=this.responseText;
+          $('#cursoNome').val()=retorno.treinamento_descricao;
+          $("#cursoPossuiReciclagem option:contains("+retorno.treinamento_reciclagem+")").attr('selected', true);
+          $('#cursoCargaHorariaFormacao').val()=retorno.treinamento_carga_horaria_formacao;
+          $('#cursoCargaHorariaReciclagem').val()=retorno.treinamento_carga_horaria_reciclagem;
+          $("#cursoReferencia option:contains("+retorno.treinamento_referencia_descricao+")").attr('selected', true);
+          $('#cursoValidadeTreinamento').val()=retorno.treinamento_validade;
+          
       }  
     };
     xhttp.open("GET","../ajax/ajax.php?treinamentoGerenciarEditar=1&dados="+dados);
     xhttp.send();
 }
 
-function treinamentoEditarGravar(){
-    // PEGA DADOS FORMULARIO
-    var cursoCodigo = 1;
-    var cursoNome = document.getElementById('cursoNome').value;
-    var cursoInstrutorOrigem = document.getElementById('cursoInstrutorOrigem').value;
-    var cursoCargaHorariaFormacao = document.getElementById('cursoCargaHorariaFormacao').value;
-    var cursoCargaHorariaReciclagem = document.getElementById('cursoCargaHorariaReciclagem').value;
-    var cursoValidadeTreinamento = document.getElementById('cursoValidadeTreinamento').value;
-    var cursoInstrutorExterno = document.getElementById('cursoInstrutorExterno').value;
-    var cursoInstrutorInterno = document.getElementById('cursoInstrutorInterno').value;
-    var cursoPossuiReciclagem = document.getElementById('cursoPossuiReciclagem').value;
-    var cursoCadastradoPor = document.getElementById('cursoCadastradoPor').value;
-    var cursoCadastradoId = document.getElementById('cursoCadastradoId').value;
-    
-    
-    
+function cursoGravarAtualizar(){
     
     // PEGA DADOS FORMULARIO
+    var cursoCodigo = $('#cursoCodigo').val();
+    var cursoCadastradoPor = $('#cursoCadastradoPor').val();
+    var cursoNome = $('#cursoNome').val();
+    var cursoPossuiReciclagem = $('#cursoPossuiReciclagem').val();
+    var cursoCargaHorariaFormacao = $('#cursoCargaHorariaFormacao').val();
+    var cursoCargaHorariaReciclagem = $('#cursoCargaHorariaReciclagem').val();
+    var cursoReferencia = $('#cursoReferencia').val();
+    var cursoValidadeTreinamento = $('#cursoValidadeTreinamento').val();
     
+   
     //CONCATENA DADOS PARA ENVIO
-    var dados="";
-    dados = dados.concat(cursoCodigo,";");
-    dados = dados.concat(cursoNome,";");
-    dados = dados.concat(cursoInstrutorOrigem,";");
-    dados = dados.concat(cursoCargaHorariaFormacao,";");
-    dados = dados.concat(cursoCargaHorariaReciclagem,";");
-    dados = dados.concat(cursoValidadeTreinamento,";");
-    dados = dados.concat(cursoInstrutorExterno,";");
-    dados = dados.concat(cursoInstrutorInterno,";");
-    dados = dados.concat(cursoPossuiReciclagem,";");
-    dados = dados.concat(cursoCadastradoPor,";");
-    dados = dados.concat(cursoCadastradoId);
-    //CONCATENA DADOS PARA ENVIO
+    var dados='{"cursoCodigo":"'+cursoCodigo+'",';
+        dados+='"cursoCadastradoPor":"'+cursoCadastradoPor+'",';
+        dados+='"cursoNome":"'+cursoNome+'",';
+        dados+='"cursoPossuiReciclagem":"'+cursoPossuiReciclagem+'",';
+        dados+='"cursoCargaHorariaFormacao":"'+cursoCargaHorariaFormacao+'",';
+        dados+='"cursoCargaHorariaReciclagem":"'+cursoCargaHorariaReciclagem+'",';
+        dados+='"cursoReferencia":"'+cursoReferencia+'",';
+        dados+='"cursoValidadeTreinamento":"'+cursoValidadeTreinamento+'"}';
     
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
@@ -468,14 +433,14 @@ function treinamentoEditarGravar(){
           if( this.responseText == "true"){
               
               // EXIBE DADOS ATUALIZADOS PARA CLIENTE
-              treinamentoGerenciarEditar(cursoCadastradoId,cursoCadastradoPor);
+              treinamentoGerenciarEditar(cursoCodigo,cursoCadastradoPor);
               
               // EXIBE MENSAGEM DE SUCESSO AO USUARIO //
-              notificacao('top', 'right', 'success', 'Curso '+cursoNome+' gravado com sucesso!', 400, 'ti-face-smile');
+              notificacao('Gerenciamento Curso' , 'Dados atualizados com sucesso.','success');
                 
               
           }else{
-              notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar gravar o curso '+cursoNome+', verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
+              notificacao('Gerenciamento Curso','!!! ATENÇÃO !!! Houve uma falha ao tentar gravar os dados, por favor tente novamente.','error');
            
           }
           
@@ -483,7 +448,7 @@ function treinamentoEditarGravar(){
           
       }  
     };
-    xhttp.open("GET","../ajax/ajax.php?treinamentoEditarGravar=1&dados="+dados);
+    xhttp.open("GET","../ajax/ajax.php?cursoGravarAtualizar=1&dados="+dados);
     xhttp.send();
 }
 
@@ -640,11 +605,9 @@ function treinamentosEditarGravar(){
             if( this.readyState == 4 && this.status == 200 ){
                 
                 if(this.responseText == 'true') {
-                //    notificacao('top', 'right', 'success', 'Treinamento '+treinamentos_nome+' gravado com sucesso!', 400, 'ti-face-smile');
-                //                  alert(xhttp.responseText); 
+                
                 }else{
-                // notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar gravar os dados do Treinamento '+treinamentos_nome+', verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
-              
+                
                 }
             }
         };

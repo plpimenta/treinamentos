@@ -100,9 +100,11 @@ if($_GET['cursoGravar']){
     # RECEBE DADOS VINDOS VINDOS VIA AJAX #
     $dados=$_GET['dados'];
     
+    # CONVERTE DE JSON PARA HOBJETO
+    $dados = json_decode($dados);
     
-    # CONVERTE DADOS EM ARRAY COMO DELIMITADOR , #
-    $dados= explode(";",$dados);
+    # CONVERTE DADOS DE UM OBJETO PARA MAIUSCULO
+    $dados=funcaoConverteDadosObjetoParaMaiusculo($dados);
     
     # EFETUA GRAVAÇÃO BANCO #
     $valida=gravarTreinamento($conn,$dados);
@@ -110,33 +112,21 @@ if($_GET['cursoGravar']){
     
 }
 
-if($_GET['validaCursoJaCadastrado']){
-    
-    # RECEBE DADOS VINDO VIA AJAX #
-    $cursoCodigo=$_GET['cursoCodigo'];
-    
-    # EXECUTA FUNCAO PARA VALIDAR SE JA ESTÁ CADASTRADO CODIGO #
-    $valida=validaCodigoCurso($conn,$cursoCodigo);
-    
-    if($valida){
-        echo "true";
-    }else{
-        echo "false";
-    }
-}
 
 if($_GET['treinamentoDeletar']){
     
-    $dados=$_GET['dados'];
-    $dados= explode(";", $dados);
+    $dados= json_decode($_GET['dados']);
     
-    $id=$dados[0];
-    $alteradoPor=$dados[1];
-    
+   
     # EXECUTA FUNCAO PARA DESATIVAR TREINAMENTO #
-    $valida=gravarApagarTreinamento($conn,$id);
+    $valida=gravarApagarTreinamento($conn,$dados);
     
-    
+    if($valida){
+        echo "<script>window.location='../paginas/treinamentosGerenciar.php?cursoDeletado=1'</script>";
+    }else{
+        echo "<script>window.location='../paginas/treinamentosGerenciar.php?falha=1'</script>";
+    }
+        
     
 }
 
@@ -222,195 +212,15 @@ if($_GET['fornecedorDeletar']){
 if($_GET['treinamentoGerenciarEditar']){
     
     # PEGA DADOS VIA PARAMETRO #
-    $dados=$_GET['dados'];
+    $dados= json_decode($_GET['dados']);
     
-    # DIVIDE DADOS LIMITADO POR , E CRIA ARRAY #
-    $dados= explode(";", $dados);
     
-    $id=$dados[0];
-    $alteradoPor=$dados[1];
     
     # SELECIONA DADOS DO TREINAMENTO #
-    $treinamento= selectTreinamentoPorId($conn, $id);
-    
-    $dados='<div class="form-group">
-                    <input type="text" id="cursoCadastradoPor" name="cursoCadastradoPor" hidden="" value="'.$alteradoPor.'"/>
-                    <input type="text" id="cursoCadastradoId" name="cursoCadastradoId" hidden="" value="'.$id.'"/>
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-1">
-                            <label for="cursoCodigo">Código</label>
-                            <input type="number" id="cursoCodigo" name="cursoCodigo" class="form-control border-input" readonly="" placeholder="CODIGO" onblur="validaCursoJaCadastrado()" value="'.$treinamento['treinamento_codigo'].'" />
-                        </div>
-                        <div class="col-lg-9 col-sm-3">
-                            <label for="cursoNome">Nome Curso</label>
-                            <input type="text" id="cursoNome" name="cursoNome" class="form-control border-input" placeholder="Informe o nome do curso" value="'.$treinamento['treinamento_descricao'].'" />
-                        </div>
-                    </div>
-                    <br>';
+    $treinamento= selectTreinamentoPorCodigo($conn, $dados->codigo);
     
     
-    if($treinamento['treinamento_reciclagem'] == 1){
-        $dados.='<div class="row">
-                        <div class="col-lg-4 col-sm-3">
-                            <label for="cursoPossuiReciclagem">Curso Possui Reciclagem</label>
-                            <select id="cursoPossuiReciclagem" name="cursoPossuiReciclagem" onblur="cursoInserirExibeReciclagem()" class="form-control border-input">
-                                <option value="1">Sim</option>
-                                <option value="0">Não</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-1">
-                            <label for="cursoCargaHorariaFormacao">Carga Horária Formação</label>
-                            <input type="number" id="cursoCargaHorariaFormacao" name="cursoCargaHorariaFormacao" class="form-control border-input" placeholder="Informe a carga horária" value="'.$treinamento['treinamento_carga_horaria_formacao'].'" />
-                        </div>
-                        <div class="col-lg-4 col-sm-3"  id="cursoCargaHorariaReciclagemExibir">
-                            <label for="cursoCargaHorariaReciclagem">Carga Horária Reciclagem</label>
-                            <input type="number" id="cursoCargaHorariaReciclagem" name="cursoCargaHorariaReciclagem" class="form-control border-input" placeholder="Informe a carga horária" value="'.$treinamento['treinamento_carga_horaria_reciclagem'].'"  />
-                        </div>
-                        
-                    </div>
-                    <br>';
-    }else{
-         $dados.='<div class="row">
-                        <div class="col-lg-4 col-sm-3">
-                            <label for="cursoPossuiReciclagem">Curso Possui Reciclagem</label>
-                            <select id="cursoPossuiReciclagem" name="cursoPossuiReciclagem" onblur="cursoInserirExibeReciclagem()" class="form-control border-input">
-                                <option value="0">Não</option>
-                                <option value="1">Sim</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-1">
-                            <label for="cursoCargaHorariaFormacao">Carga Horária Formação</label>
-                            <input type="number" id="cursoCargaHorariaFormacao" name="cursoCargaHorariaFormacao" class="form-control border-input" placeholder="Informe a carga horária" value="'.$treinamento['treinamento_carga_horaria_formacao'].'" />
-                        </div>
-                        <div class="col-lg-4 col-sm-3" hidden=""  id="cursoCargaHorariaReciclagemExibir">
-                            <label for="cursoCargaHorariaReciclagem">Carga Horária Reciclagem</label>
-                            <input type="number" id="cursoCargaHorariaReciclagem" name="cursoCargaHorariaReciclagem" class="form-control border-input" placeholder="Informe a carga horária" value="0"  />
-                        </div>
-                        
-                    </div>
-                    <br>
-                    ';
-                                
-    }
-              
-    
-    if( strtolower($treinamento['treinamento_origem_instrutor']) == strtolower("INTERNO")){
-        $dados.='<div class="row">
-                        <div class="col-lg-6 col-sm-1">
-                            <label for="cursoInstrutorOrigem">Selecione a origem do Instrutor</label>
-                            <select id="cursoInstrutorOrigem" name="cursoInstrutorOrigem" onblur="cursoInserirExibeInstrutorOrigem()" class="form-control border-input">
-                                <option value="Interno">Interno</option>
-                                <option value="Externo">Externo</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-1">
-                            <label for="cursoValidadeTreinamento">Validade do Treinamento</label>
-                            <input type="number" id="cursoValidadeTreinamento" name="cursoValidadeTreinamento" class="form-control border-input" placeholder="Valor em meses" value="'.$treinamento['treinamento_validade'].'" />
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row" >
-                        <div class="col-lg-6 col-sm-1" id="cursoInstrutorInternoContainer" >
-                            <label for="cursoInstrutorInterno">Selecione Instrutor</label>
-                            <select id="cursoInstrutorInterno" name="cursoInstrutorInterno" class="form-control border-input">';
-                                    $instrutorNome= selectInstrutor($conn, $treinamento['treinamento_origem_instrutor'], $treinamento['treinamento_instrutor']);
-        
-                                    $dados.='<option value="'.$instrutorNome['Matricula'].'">'.$instrutorNome['Nome'].'</option>';
-                                    
-                                    $instrutores=selectDadosPessoalParaFormulario($conn);
-                                    if($instrutores->rowcount() == 0){
-                                        $dados.='<option>Nao há instrutores cadastrados</option>';
-                                    }else{
-                                        while($instrutor=$instrutores->fetch()){
-                                           $dados.='<option value="'.$instrutor['Matricula'].'">'.$instrutor['Nome'].'</option>';
-                                        }
-                                    }
-                                
-                           $dados.=' </select>    
-                        </div>
-                        <div class="col-lg-6 col-sm-1" id="cursoInstrutorExternoContainer" hidden="">
-                            <label for="cursoInstrutorExterno">Selecione o Fornecedor</label>
-                            <select id="cursoInstrutorExterno" name="cursoInstrutorExterno" class="form-control border-input">
-                                    <option>Selecione um fornecedor</option>
-                                    ';
-                               
-                                
-                                # SELECIONA DADOS DO INSTRUTOR #
-                                $fornecedoresDados= selectFornecedores($conn);
-                                    if($fornecedoresDados->rowcount() == 0 ){
-                                        $dados.='<option>Nao Há fornecedores cadastrados</option>';
-                                    }else{
-                                        while($fornecedorDados=$fornecedoresDados->fetch()){
-                                            $dados.='<option value="'.$fornecedorDados['fornecedor_codigo'].'">'.$fornecedorDados['fornecedor_descricao'].'</option>';
-                                            
-                                        }
-                                    }
-                                
-                                
-
-                         $dados.='</select>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    
-            ';
-    }else{
-        $dados.='<div class="row">
-                        <div class="col-lg-6 col-sm-1">
-                            <label for="cursoInstrutorOrigem">Selecione a origem do Instrutor</label>
-                            <select id="cursoInstrutorOrigem" name="cursoInstrutorOrigem" onblur="cursoInserirExibeInstrutorOrigem()" class="form-control border-input">
-                                <option value="Externo">Externo</option>
-                                <option value="Interno">Interno</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-1">
-                            <label for="cursoValidadeTreinamento">Validade do Treinamento</label>
-                            <input type="number" id="cursoValidadeTreinamento" name="cursoValidadeTreinamento" class="form-control border-input" placeholder="Valor em meses" value="'.$treinamento['treinamento_validade'].'" />
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row" >
-                        <div class="col-lg-6 col-sm-1" id="cursoInstrutorInternoContainer" hidden="" >
-                            <label for="cursoInstrutorInterno">Selecione Instrutor</label>
-                            <select id="cursoInstrutorInterno" name="cursoInstrutorInterno" class="form-control border-input">
-                                <option value="50">João Paulo</option>
-                            </select>    
-                        </div>
-                        <div class="col-lg-6 col-sm-1" id="cursoInstrutorExternoContainer" >
-                            <label for="cursoInstrutorExterno">Selecione o Fornecedor</label>
-                            <select id="cursoInstrutorExterno" name="cursoInstrutorExterno" class="form-control border-input">
-                                ';
-                                    # SELECIONA NOME DO FORNECEDOR #
-                                     $fornecedorNome= selectFornecedorPorCodigo($conn, $treinamento['treinamento_instrutor']);
-                                
-                                     $dados.='<option value="'.$fornecedorNome['fornecedor_codigo'].'">'.$fornecedorNome['fornecedor_descricao'].'</option>';
-                                     
-                                    $fornecedoresDados= selectFornecedores($conn);
-                                    if($fornecedoresDados->rowcount() == 0 ){
-                                        $dados.='<option>Nao Há fornecedores cadastrados</option>';
-                                    }else{
-                                        while($fornecedorDados=$fornecedoresDados->fetch()){
-                                            $dados.='<option value="'.$fornecedorDados['fornecedor_codigo'].'">'.$fornecedorDados['fornecedor_descricao'].'</option>';
-                                            
-                                        }
-                                    }
-                                
-
-                         $dados.='</select>
-                                        </div>
-                                    </div>
-                                    <br>
-                                     ';
-    }
-    
-    $dados.='<hr><div class="row">
-                    <div class="col-lg-6">
-                        <button class="btn btn-info" onclick="treinamentoEditarGravar()" id="cursoGravarBtn">Gravar</button>
-                        <button class="btn btn-warning" onclick="treinamentoEditarVoltar(\''.$alteradoPor.'\')" >Voltar</button>
-                    </div>
-                </div>
-            </div>';
-    echo $dados;
+    echo json_encode($treinamento);
 }
 
 if($_GET['gravar']){
@@ -433,72 +243,81 @@ if($_GET['treinamentoGerenciarListar']){
                     </div>';
         }else{
             
-            $dados='<table class="table table-condensed">
-                    <thead>
-                        <tr class="tabela-titulo">
-                            <th style="font-size: 13px;">DESCRIÇÃO</th>
-                            <th style="font-size: 13px;">CÓD</th>
-                            <th style="font-size: 13px;">INSTRUTOR</th>
-                            <th style="font-size: 13px;">HORAS FORMAÇÃO</th>
-                            <th style="font-size: 13px;">VALIDADE</th>
-                            <th style="font-size: 13px;">CADASTRADO POR</th>
-                            <th style="font-size: 13px;">DATA CADASTRO</th>
-                            <th style="font-size: 13px;">ULTIMA ALTERAÇÃO</th>
-                            <th style="font-size: 13px;"></th>
-                            <th style="font-size: 13px;"></th>
+            
+            
+            $dados='<table id="datatable" class="table table-striped table-bordered">
+                      <thead>
+                      <tr class="tabela-formata-titulo">
+                            <th style="font-size: 12px;text-align:center;"">DESCRIÇÃO</th>
+                            <th style="font-size: 12px;text-align:center;">CÓD</th>
+                            <th style="font-size: 12px;text-align:center;">INSTRUTOR</th>
+                            <th style="font-size: 12px;text-align:center;">HORAS FORMAÇÃO</th>
+                            <th style="font-size: 12px;text-align:center;">VALIDADE</th>
+                            <th style="font-size: 12px;text-align:center;">CADASTRADO POR</th>
+                            <th style="font-size: 12px;text-align:center;">DATA CADASTRO</th>
+                            <th style="font-size: 12px;text-align:center;">ULTIMA ALTERAÇÃO</th>
+                            <th style="font-size: 12px;text-align:center;"></th>
+                            <th style="font-size: 12px;text-align:center;"></th>
                         </tr>
-                    </thead>
-                    <tbody>';
+                      </thead>
+                      <tbody>';
             
             
             # CONTADOR PARA CONTROLAR AS LINHAS #
-             $contador=0;
-             
-              while($treinamento=$treinamentos->fetch()){
+                 
+                        $contador=0;
+
+                        while($treinamento=$treinamentos->fetch()){
                            
-                            # TRATA VARIAVEL DE ULTIMA ALTERAÇÃO, POIS CASO NÃO TENHA PREENCHE COM ---- #
-                            if(!$treinamento['treinamento_data_alteracao']){
-                                $treinamento['treinamento_data_alteracao']="----------";
-                            }
+                                    
+                                    # TRATA DATA DE ALTERACAO
+                                    if(!$treinamento['treinamento_data_alteracao']){
+                                        $dataAlteracao='<td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">----------</td>';
+                                    }else{
+                                        $dataAlteracao='<td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_alteracao'])).'</td>';
+                                        
+                                    }
+                                    
                             
-                            if($contador % 2 == 0 ){
-                               
-                                $dados.='<tr class="tabela-linha tabela-linha-centraliza tabela-linha-clara">
-                                       <td>'.$treinamento['treinamento_descricao'].'</td>
-                                       <td>'.$treinamento['treinamento_codigo'].'</td>
-                                       <td>'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
-                                       <td>'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
-                                       <td>'.$treinamento['treinamento_validade'].' Meses</td>
-                                       <td>'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
-                                       <td>'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
-                                       <td>'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_alteracao'])).'</td>
-                                       <td><i class="ti-pencil" onclick="treinamentoGerenciarEditar(\''.$treinamento['treinamento_id'].'\',\''.$alteradoPor.'\')"></i></td>
-                                       <td><i class="ti-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$alteradoPor.'\')"></i></td>
-                                  </tr>'; 
-                                
-                            }else{
-                                $dados.='<tr class="tabela-linha tabela-linha-centraliza tabela-linha-escura">
-                                       <td>'.$treinamento['treinamento_descricao'].'</td>
-                                       <td>'.$treinamento['treinamento_codigo'].'</td>
-                                       <td>'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
-                                       <td>'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
-                                       <td>'.$treinamento['treinamento_validade'].' Meses</td>
-                                       <td>'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
-                                       <td>'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
-                                       <td>'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_alteracao'])).'</td>
-                                       <td><i class="ti-pencil" onclick="treinamentoGerenciarEditar(\''.$treinamento['treinamento_id'].'\',\''.$alteradoPor.'\')"></i></td>
-                                       <td><i class="ti-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$alteradoPor.'\')"></i></td>
-                                  </tr>'; 
-                            }
+                                    if($contador % 2 == 0 ){
+
+                                        $dados.='<tr>
+                                               <td class="tabela-formata-linha-fonte">'.$treinamento['treinamento_descricao'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_codigo'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_validade'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
+                                               '.$dataAlteracao.'
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><i class="fa fa-pencil" onclick="treinamentoGerenciarEditar(\''.$treinamento['treinamento_id'].'\',\''.$alteradoPor.'\')"></i></td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><i class="fa fa-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$alteradoPor.'\')"></i></td>
+                                          </tr>'; 
+
+                                    }else{
+                                        $dados.='<tr>
+                                               <td class="tabela-formata-linha-fonte">'.$treinamento['treinamento_descricao'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_codigo'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_validade'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
+                                               '.$dataAlteracao.'
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><i class="fa fa-pencil" onclick="treinamentoGerenciarEditar(\''.$alteradoPor.'\',\''.$row_usu_info['usuario_id'].'\')"></i></td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><i class="fa fa-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$alteradoPor.'\')"></i></td>
+                                          </tr>'; 
+                                    }
+
+                                    $contador++;
                             
-                            $contador++;
-                            
-                        }
+                        } # FECHA WHILE
                         
                 
                   # FECHA TABELAS #
                   $dados.='</tbody>
-                        </table>';
+                            </table>  
+                            ';
             
         }
     
@@ -506,15 +325,12 @@ if($_GET['treinamentoGerenciarListar']){
     
 }
 
-if($_GET['treinamentoEditarGravar']){
+if($_GET['cursoGravarAtualizar']){
     
     # RECEBE DADOS VIA PARAMETRO #
-    $dados=$_GET['dados'];
+    $dados= json_decode($_GET['dados']);
     
-    
-    # QUEBRA VARIAVEL DADOS EM ARRAY #
-    $dados= explode(";", $dados);
-    
+   
     # ENVIA PARA FUNCAO DE GRAVACAO #
     gravarTreinamentoAtualizar($conn,$dados);
 }
@@ -721,22 +537,21 @@ if($_GET['treinamentoEditarGravar']){
            <?php
        
    }
-   if($_GET['alterarUsuarioGravar']){
-       $dados = $_GET['id'];
-       $dados = explode(",", $dados);
-//       echo $dados[5];
-//       alert('testando');
-       $sql = funcaoGravarAtualizarUsuario($conn, $dados);
-       
-      fecharEditarUsuario();
-   }
+   
+if($_GET['alterarUsuarioGravar']){
+   $dados = $_GET['id'];
+   $dados = explode(",", $dados);
+   $sql = funcaoGravarAtualizarUsuario($conn, $dados);
+
+  fecharEditarUsuario();
+}
    
    
-   if($_GET['treinamentosHistorico']){
-       $id = $_GET['id'];
-       
-       $sql=selectTreinamentosHist($conn,$id);
-        $row=$sql->fetch();
+if($_GET['treinamentosHistorico']){
+   $id = $_GET['id'];
+
+   $sql=selectTreinamentosHist($conn,$id);
+    $row=$sql->fetch();
 
 ?>
 <div id="editarHistoricoTabela" class="row" >
@@ -925,15 +740,23 @@ if($_GET['treinamentoEditarGravar']){
        
    }
    
- if($_GET['treinamentosEditarGravar1']){
+if($_GET['treinamentosEditarGravar1']){
        
-       $dados = $_GET['id'];
-       $dados = explode(",", $dados);
-    ;
+   $dados = $_GET['id'];
+   $dados = explode(",", $dados);
 
-       $grava = funcaoGravarAtualizarTreinamentosHist($conn, $dados);
-      
-           echo "true";
-       
- 
-    }
+   $grava = funcaoGravarAtualizarTreinamentosHist($conn, $dados);
+
+   echo "true";
+
+}
+
+if($_GET['validaCursoJaCadastrado']){
+    
+    #PEGA CURSO PASSADO VIA PARAMETRO
+    $curso=$_GET['curso'];
+    
+    validaNomeCursoJaCadastrado($conn,$curso);
+    
+}
+

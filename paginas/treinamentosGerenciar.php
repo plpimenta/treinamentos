@@ -1,43 +1,39 @@
-<?php
-# Gerenciamento de sessao #
-//include '../controles/sessaoValida.php';
+<!--IMPORTA ESTRUTURA SUPERIOR DA PAGINA (HTML,TITLE,HEAD,...)-->
+<?php require_once '../estrutura/estruturaSuperiorPagina.php';?>
+<!--IMPORTA ESTRUTURA SUPERIOR DA PAGINA (HTML,TITLE,HEAD,...)-->
 
-# Includes utilizadas no projetos (CLASSES E FUNCOES) #
-require_once '../core/config.php';
-# Includes utilizadas no projetos (CLASSES E FUNCOES) #
+<!--IMPORTA MENU LATERAL ESQUERDO-->
+<?php require_once '../estrutura/menuEsquerdo.php'; ?>
+<!--IMPORTA MENU LATERAL ESQUERDO-->
 
-# Estrutura superior da pagina
-require_once '../estrutura/estruturaSuperiorPagina.php';
-# Estrutura superior da pagina
-?>
-<!--Adicionar codigo abaixo desta linha-->
+<!--IMPORTA MENU TOP-->
+<?php require_once '../estrutura/menuSuperior.php'; ?>
+<!--IMPORTA MENU TOP-->
 
-<!--exibe quadro de pesquisa-->
-<div class="row" id="treinamento-gerenciar-pesquisa" hidden="">
-    <div class="col-lg-3">
-        <label for="buscaDescricao">Descrição</label>
-        <input type="text" id="buscaDescricao" name="buscaDescricao" class="form-control border-input"  />
-    </div>
-    <div class="col-lg-3">
-        <label for="buscaCodigo">Código</label>
-        <input type="number" id="buscaCodigo" name="buscaCodigo" class="form-control border-input"  />
-    </div>
-    <div class="col-lg-3">
-        <label for="buscaInstrutor">Instrutor</label>
-        <input type="text" id="buscaInstrutor" name="buscaInstrutor" class="form-control border-input"  />
-    </div>
-</div>
-<!--exibe quadro de pesquisa-->
+<!-- CONTEUDO DA PAGINA -->
+<div class="right_col" role="main">
+  <div class="row top_tiles"> <!-- top tiles -->
 
-<!--icone de filtro-->
-<span class="fas fa-search" id="icone-pesquisa"></span>
-<!--icone de filtro-->
-<div class="row" id="treinamento-gerenciar-painel-lista">
-    <div class="col-lg-12 col-sm-8">
-        <div class="card">
-            <div class="panel-heading"><h4>Gerenciamento de Treinamentos</h4></div>
-            <div class="panel-body" id="treinamentos-gerenciar-container-dados">
-                    <!--SELECIONA TREINAMENTOS BANCO DE DADOS E EXIBE NA TABELA-->
+  <!--EDITAR DAQUI PARA BAIXO-->
+  
+  <div class="clearfix"></div>
+
+            <div class="row" >
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Lista de Cursos</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                <div class="x_content" id="treinamentos-gerenciar-container-dados">
+                      
+                      <!--SELECIONA TREINAMENTOS BANCO DE DADOS E EXIBE NA TABELA-->
                     <?php
                         $treinamentos= selectTreinamentos($conn, 1);
                         
@@ -47,105 +43,92 @@ require_once '../estrutura/estruturaSuperiorPagina.php';
                                     </div>';
                         }else{
                     ?>
-                    
-
-                    <!--SELECIONA TREINAMENTOS BANCO DE DADOS E EXIBE NA TABELA-->
-                   
-                <table class="table table-condensed">
-                    <thead>
-                        <tr class="tabela-titulo">
-                            <th style="font-size: 13px;">DESCRIÇÃO</th>
-                            <th style="font-size: 13px;">CÓD</th>
-                            <th style="font-size: 13px;">INSTRUTOR</th>
-                            <th style="font-size: 13px;">HORAS FORMAÇÃO</th>
-                            <th style="font-size: 13px;">VALIDADE</th>
-                            <th style="font-size: 13px;">CADASTRADO POR</th>
-                            <th style="font-size: 13px;">DATA CADASTRO</th>
-                            <th style="font-size: 13px;">ULTIMA ALTERAÇÃO</th>
-                            <th style="font-size: 13px;"></th>
-                            <th style="font-size: 13px;"></th>
+                      
+                    <table id="datatable" class="table table-striped table-bordered">
+                      <thead>
+                      <tr class="tabela-formata-titulo">
+                            <th style="font-size: 12px;text-align:center;"">DESCRIÇÃO</th>
+                            <th style="font-size: 12px;text-align:center;">CÓD</th>
+                            <th style="font-size: 12px;text-align:center;">INSTRUTOR</th>
+                            <th style="font-size: 12px;text-align:center;">HORAS FORMAÇÃO</th>
+                            <th style="font-size: 12px;text-align:center;">VALIDADE</th>
+                            <th style="font-size: 12px;text-align:center;">CADASTRADO POR</th>
+                            <th style="font-size: 12px;text-align:center;">DATA CADASTRO</th>
+                            <th style="font-size: 12px;text-align:center;">ULTIMA ALTERAÇÃO</th>
+                            <th style="font-size: 12px;text-align:center;"></th>
+                            <th style="font-size: 12px;text-align:center;"></th>
                         </tr>
-                    </thead>
-                    <tbody>
-                    
-                     <!--IMPRIME CORPO DA TABELA-->   
+                      </thead>
+                      <tbody>
+                        <!--IMPRIME CORPO DA TABELA-->   
                         <?php
                             
                         $contador=0;
 
                         while($treinamento=$treinamentos->fetch()){
                            
-                            # TRATA VARIAVEL DE ULTIMA ALTERAÇÃO, POIS CASO NÃO TENHA PREENCHE COM ---- #
-                            if(!$treinamento['treinamento_data_alteracao']){
-                                $treinamento['treinamento_data_alteracao']="----------";
-                            }
+                                    
+                                    
+                                    # TRATA DATA DE ALTERACAO
+                                    if(!$treinamento['treinamento_data_alteracao']){
+                                        $dataAlteracao='<td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">----------</td>';
+                                    }else{
+                                        $dataAlteracao='<td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_alteracao'])).'</td>';
+                                        
+                                    }
+                                    
                             
-                            if($contador % 2 == 0 ){
-                               
-                                echo '<tr class="tabela-linha tabela-linha-centraliza tabela-linha-clara">
-                                       <td>'.$treinamento['treinamento_descricao'].'</td>
-                                       <td>'.$treinamento['treinamento_codigo'].'</td>
-                                       <td>'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
-                                       <td>'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
-                                       <td>'.$treinamento['treinamento_validade'].'</td>
-                                       <td>'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
-                                       <td>'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
-                                       <td>'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_alteracao'])).'</td>
-                                       <td><i class="ti-pencil" onclick="treinamentoGerenciarEditar(\''.$treinamento['treinamento_id'].'\',\''.$row_usu_info['usuario_id'].'\')"></i></td>
-                                       <td><i class="ti-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$row_usu_info['usuario_id'].'\')"></i></td>
-                                  </tr>'; 
-                                
-                            }else{
-                                echo '<tr class="tabela-linha tabela-linha-centraliza tabela-linha-escura">
-                                       <td>'.$treinamento['treinamento_descricao'].'</td>
-                                       <td>'.$treinamento['treinamento_codigo'].'</td>
-                                       <td>'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
-                                       <td>'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
-                                       <td>'.$treinamento['treinamento_validade'].'</td>
-                                       <td>'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
-                                       <td>'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
-                                       <td>'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_alteracao'])).'</td>
-                                       <td><i class="ti-pencil" onclick="treinamentoGerenciarEditar(\''.$treinamento['treinamento_id'].'\',\''.$row_usu_info['usuario_id'].'\')"></i></td>
-                                       <td><i class="ti-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$row_usu_info['usuario_id'].'\')"></i></td>
-                                  </tr>'; 
-                            }
+                                    if($contador % 2 == 0 ){
+
+                                        echo '<tr>
+                                               <td class="tabela-formata-linha-fonte">'.$treinamento['treinamento_descricao'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_codigo'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_validade'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
+                                               '.$dataAlteracao.'
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><a href="treinamentosEditar.php?id='.$treinamento['treinamento_id'].'"<i class="fa fa-pencil"></i></td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><i class="fa fa-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$row_usu_info['usuario_id'].'\')"></i></td>
+                                          </tr>'; 
+
+                                    }else{
+                                        echo '<tr>
+                                               <td class="tabela-formata-linha-fonte">'.$treinamento['treinamento_descricao'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_codigo'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_validade'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
+                                               '.$dataAlteracao.'
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><a href="treinamentosEditar.php?id='.$treinamento['treinamento_id'].'"<i class="fa fa-pencil"></i></td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><i class="fa fa-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$row_usu_info['usuario_id'].'\')"></i></td>
+                                          </tr>'; 
+                                    }
+
+                                    $contador++;
                             
-                            $contador++;
-                            
-                        }
-                            
-                        
-                        
+                        } # FECHA WHILE
+                        } # FECHA IF INICIAL   
                         ?>
-                     <!--IMPRIME CORPO DA TABELA-->   
-                    </tbody>
-                </table>
-                    
-                    
-                <?php } ?> <!-- FECHA TABELA -->     
+                        
+                        
+                      </tbody>
+                    </table>  
+                </div>
             </div>
         </div>
     </div>
+      
+  <!--EDITAR DAQUI PARA CIMA-->
+      
+  </div>  <!-- top tiles -->
 </div>
-<!--final linha tabela gerenciamento treinamento-->
+<!-- CONTEUDO DA PAGINA -->
 
-<!--painel exibicao formulario de edicao treinamento-->
-<div class="row" id="treinamento-gerenciar-painel-container-edicao" hidden="">
-    <div class="col-lg-10 col-sm-8">
-        <div class="card">
-            <div class="panel-heading"><h4></h4></div>
-            <div class="panel-body" id="treinamento-gerenciar-painel-edicao">
-  
-            </div>
-        </div>
-    </div>
-</div>
-<!--painel exibicao formulario de edicao treinamento-->
 
-<!--Adicionar codigo acima desta linha->
-<?php
-#Estrutura inferior da pagina
-require_once '../estrutura/estruturaInferiorPagina.php';
-#Estrutura inferior da pagina
-?>
-
+<!--ESTRUTURA INFERIOR SCRIPTS E INCLUDES-->
+<?php require_once '../estrutura/estruturaInferiorPagina.php'; ?>
+<!--ESTRUTURA INFERIOR SCRIPTS E INCLUDES-->

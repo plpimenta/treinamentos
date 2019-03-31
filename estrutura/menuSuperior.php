@@ -10,13 +10,13 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="">
           <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <img src="images/img.jpg" alt="">Luiz Paulo
+            <img src="<?php echo $row_usu_info['usuario_foto'] ;?>" alt=""><?php echo $row_usu_info['usuario_nome'] ;?>
             <span class=" fa fa-angle-down"></span>
           </a>
           <ul class="dropdown-menu dropdown-usermenu pull-right">
             <li><a href="javascript:;"> Profile</a></li>
             
-            <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+            <li><a href="../funcoes/loginLogOut.php?logout=1"><i class="fa fa-sign-out pull-right"></i> Sair</a></li>
           </ul>
         </li>
 

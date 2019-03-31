@@ -79,3 +79,23 @@ function validaCodigoCurso($conn,$codigo){
         echo $ex->getMessage();
     }
 }
+
+function validaNomeCursoJaCadastrado($conn,$curso){
+    
+    try {
+        
+        $valida=$conn->prepare('SELECT treinamento_id FROM treinamentos WHERE treinamento_descricao = :descricao');
+        $valida->bindValue(":descricao",$curso);
+        $valida->execute();
+        
+        if($valida->rowcount() > 0 ){
+            echo "true";
+        }else{
+            
+            echo "false";
+        }
+            
+    } catch (Exception $ex) {
+        echo $ex->getMessage();
+    }
+}

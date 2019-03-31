@@ -11,7 +11,7 @@
         <!-- menu profile quick info -->
         <div class="profile clearfix">
             <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="<?php echo $row_usu_info['usuario_foto']?>" alt="" class="img-circle profile_img">
             </div>
             <div class="profile_info">
                 <span>Seja Bem vindo,</span>
@@ -39,13 +39,14 @@
             <div class="menu_section">
                 <h3>Cadastro</h3>
                 <ul class="nav side-menu">
-                    <li><a><i class="fa fa-graduation-cap"></i> Treinamentos <span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-graduation-cap"></i> Cursos <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="../paginas/treinamentoCadastrar.php">Cadastrar</a></li>
-                            <li><a href="#">Gerenciar</a></li>
+                            <li><a href="../paginas/treinamentosGerenciar.php">Gerenciar</a></li>
+                            <li style="display: none;"><a href="../paginas/treinamentosEditar.php">Editar</a></li>
                           </ul>
                     </li>
-                    <li><a><i class="fa fa-joomla"></i> Cursos <span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-joomla"></i> Treinamentos <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="#">Cadastrar</a></li>
                             <li><a href="#">Gerenciar</a></li>
@@ -82,7 +83,7 @@
             <a data-toggle="tooltip" data-placement="top" title="Bloquer">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
             </a>
-            <a data-toggle="tooltip" data-placement="top" title="Sair" href="login.html">
+            <a data-toggle="tooltip" data-placement="top" title="Sair" href="../funcoes/loginLogOut.php?logout=1">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
             </a>
         </div>

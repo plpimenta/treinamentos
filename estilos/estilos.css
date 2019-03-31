@@ -38,54 +38,19 @@
 #login-painel{
     padding-top: 2%;
 }
-/*formatacao tabelas*/
-.tabela-titulo{
-    background: #151515;
-    color: #fff;;
-}
-.tabela-titulo > th{
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-}
-.table-formata-font{
-    font-size: 15px;
-}
-.tabela-linha{
-    
-}
-.tabela-linha > td{
-    text-align: left;
-    font-size: 11px;
-}
-.tabela-linha:hover{
-    background: #151515;
-    
-}
-.tabela-linha-centraliza{
+th.tabela-formata-titulo{
     text-align: center;
 }
-.tabela-celula-limite-caracter{
-    max-width: 18ch;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.tabela-formata-titulo{
+    text-align: center;
+    cursor: pointer;
 }
-.tabela-linha-escura{
-    background: #F6E3CE;
-}
-.tabela-linha-clara{
-    background: #F8E6E0;
-}
-.tabela-linha-escura > td{
-    background: #F6E3CE;
+.tabela-formata-linha-alinhamento{
     text-align: center;
 }
-.tabela-linha-clara > td{
-    background: #F8ECE0;
-    text-align: center;
-}
-
+.tabela-formata-linha-fonte{
+    font-size: 10px;
+}    
 .fa-eye{
     cursor: pointer;
 }
@@ -97,18 +62,17 @@ h4{
     font-weight: bold;
     cursor: pointer;
 }
-.ti-pencil{
+.fa-pencil{
  cursor: pointer;   
 }
-.ti-pencil:hover{
+.fa-pencil:hover{
     color: #FA8258;
 }
     
-.ti-close{
-    color: #FE2E2E;
+.fa-close{
     cursor: pointer;
 }
-.ti-close:hover{
+.fa-close:hover{
     color: #FA5858;
 }
 

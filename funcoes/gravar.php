@@ -179,107 +179,84 @@ function gravarFornecedorExcluir($conn,$id){
 
 function gravarTreinamento($conn,$dados){
     
-    # VALIDA SE CODIGO CURSO JA ESTA CADASTRADO #
-    $valida=validaTreinamentoCadastrado($conn,$dados[0]);
     
-    # VERIFICA SE O INSTRUTOR É INTERNO OU EXTERNO #
-    if($dados[2] == "Externo" ){
-        $instrutor=$dados[6];
-    } elseif ($dados[2] == "Interno") {
-        $instrutor=$dados[7];
         
-    }else{
-        $instrutor=9999999;
-        
-    }
-    
     # SELECIONA PROXIMO CODIGO PARA O CURSO #
     $codigo= selectCursoProximoCodigo($conn);
     
     
         try {
             # GRAVA TREINAMENTO #
-            $gravar=$conn->prepare('INSERT INTO treinamentos VALUES (null , :codigo , :descricao , :origemInstrutor , :cargaHorariaFormacao , :cargaHorariaReciclagem ,
-                                                                     :validade , :instrutor , :reciclagem ,:cadastradoPor, :dataCadastro , :alteradoPor , :dataAlteracao , :status)');
+            $gravar=$conn->prepare('INSERT INTO treinamentos VALUES (null , :codigo , :descricao , :cargaHorariaFormacao , :cargaHorariaReciclagem ,
+                                    :validade , :reciclagem , :cadastradoPor , :dataCadastro , :alteradoPor , :dataAlterado , :referencia , :status)');
             $gravar->bindValue(":codigo",$codigo);
-            $gravar->bindValue(":descricao", strtoupper($dados[1]));
-            $gravar->bindValue(":origemInstrutor",strtoupper($dados[2]));
-            $gravar->bindValue(":cargaHorariaFormacao",$dados[3]);
-            $gravar->bindValue(":cargaHorariaReciclagem",$dados[4]);
-            $gravar->bindValue(":validade",$dados[5]);
-            $gravar->bindValue(":instrutor",strtoupper($instrutor));
-            $gravar->bindValue(":reciclagem",$dados[8]);
-            $gravar->bindValue(":cadastradoPor",$dados[9]);
+            $gravar->bindValue(":descricao",$dados->cursoNome);
+            $gravar->bindValue(":cargaHorariaFormacao",$dados->cursoCargaHorariaFormacao);
+            $gravar->bindValue(":cargaHorariaReciclagem",$dados->cursoCargaHorariaReciclagem);
+            $gravar->bindValue(":validade",$dados->cursoValidadeTreinamento);
+            $gravar->bindValue(":reciclagem",$dados->cursoPossuiReciclagem);
+            $gravar->bindValue(":cadastradoPor",$dados->cursoCadastradoPor);
             $gravar->bindValue(":dataCadastro",date("Y-m-d H:i:s"));
             $gravar->bindValue(":alteradoPor",NULL);
-            $gravar->bindValue(":dataAlteracao",NULL);
+            $gravar->bindValue(":dataAlterado",NULL);
+            $gravar->bindValue(":referencia",$dados->cursoReferencia);
             $gravar->bindValue(":status",1);
             $gravar->execute();
-    
         
             if($gravar){
                 
-                echo "true";
+                return true;
             }
         } catch (Exception $ex) {
-                echo $ex->getMessage();
+                return $ex->getMessage();
         }
 }
 
 
-function gravarApagarTreinamento($conn,$id){
+function gravarApagarTreinamento($conn,$dados){
     
     try {
         
-        
-        
-        $gravar=$conn->prepare('UPDATE treinamentos SET treinamento_status = :status WHERE treinamento_id = :id');
+        $gravar=$conn->prepare('UPDATE treinamentos SET treinamento_status = :status , treinamento_alterado_por = :alteradoPor ,
+                                treinamento_data_alteracao = :dataAlteracao WHERE treinamento_id = :id');
         $gravar->bindValue(":status",0);
-        $gravar->bindValue(":id",$id);
+        $gravar->bindValue(":id",$dados->id);
+        $gravar->bindValue(":alteradoPor",$dados->alteradoPor);
+        $gravar->bindValue(":dataAlteracao",date("Y-m-d H:i:s"));
         $gravar->execute();
-        return TRUE;
+        
+        return true;
        
     } catch (Exception $ex) {
-        echo "false";
+        return FALSE;;
     }
 }
 
 function gravarTreinamentoAtualizar($conn,$dados){
     
-    try {
-        
-        # VERIFICA ORIGEM DO TREINAMENTO PARA SETAR #
-        if(strtolower($dados[2]) == strtolower("Externo" )){
-            $instrutor=$dados[6];
-        } elseif (strtolower($dados[2]) == strtolower("Interno")) {
-            $instrutor=$dados[7];
-
-        }else{
-            $instrutor=9999999;
-
-        }
+     try {
         
        
-          $gravar=$conn->prepare('UPDATE treinamentos SET treinamento_descricao = :descricao , treinamento_origem_instrutor = :origemInstrutor , 
+          $gravar=$conn->prepare('UPDATE treinamentos SET treinamento_descricao = :descricao , treinamento_referencia = :referencia , 
                                 treinamento_carga_horaria_formacao =  :cargaHorariaFormacao , treinamento_carga_horaria_reciclagem = :cargaHorariaReciclagem,
-                                treinamento_validade = :validade , treinamento_instrutor = :instrutor , treinamento_reciclagem = :reciclagem , 
-                                treinamento_alterado_por = :alteradoPor , treinamento_data_alteracao = :dataAlteracao WHERE treinamento_id = :id');
-          $gravar->bindValue(":descricao",$dados[1]);
-          $gravar->bindValue(":origemInstrutor",$dados[2]);
-          $gravar->bindValue(":cargaHorariaFormacao",$dados[3]);
-          $gravar->bindValue(":cargaHorariaReciclagem",$dados[4]);
-          $gravar->bindValue(":validade",$dados[5]);
-          $gravar->bindValue(":instrutor",$instrutor);
-          $gravar->bindValue(":reciclagem",$dados[8]);
-          $gravar->bindValue(":alteradoPor",$dados[9]);
+                                treinamento_validade = :validade  , treinamento_reciclagem = :reciclagem , 
+                                treinamento_alterado_por = :alteradoPor , treinamento_data_alteracao = :dataAlteracao WHERE treinamento_codigo = :codigo');
+          $gravar->bindValue(":descricao",$dados->cursoNome);
+          $gravar->bindValue(":referencia",$dados->cursoReferencia);
+          $gravar->bindValue(":cargaHorariaFormacao",$dados->cursoCargaHorariaFormacao);
+          $gravar->bindValue(":cargaHorariaReciclagem",$dados->cursoCargaHorariaReciclagem);
+          $gravar->bindValue(":validade",$dados->cursoValidadeTreinamento);
+          $gravar->bindValue(":reciclagem",$dados->cursoPossuiReciclagem);
+          $gravar->bindValue(":alteradoPor",$dados->cursoCadastradoPor);
           $gravar->bindValue(":dataAlteracao",date("Y-m-d H:i:s"));
-          $gravar->bindValue(":id",$dados[10]);
+          $gravar->bindValue(":codigo",$dados->cursoCodigo);
           $gravar->execute();
           
           echo "true";
-    } catch (Exception $ex) {
           
-          print_r($ex->getMessage());
+    } catch (Exception $ex) {
+          echo $ex->getMessage();
+          echo "false";
          
     }
 }
