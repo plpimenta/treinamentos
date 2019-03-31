@@ -97,18 +97,24 @@ function selectEstados($conn){
     $exib->execute();
     return $exib;
 }
-function selectFornecedores($conn){
+function selectFornecedores($conn,$status){
     
-    try {
-    
-        $exib=$conn->prepare('SELECT * FROM fornecedores WHERE fornecedor_status = :status ');
-        $exib->bindValue(":status",1);
-        $exib->execute();
-        return $exib;
+    if($status){
+        try {
+
+            $exib=$conn->prepare('SELECT * FROM fornecedores WHERE fornecedor_status = :status ');
+            $exib->bindValue(":status",$status);
+            $exib->execute();
+            return $exib;
+
+        } catch (Exception $ex) {
+            return $ex->getMessage();
+        }
         
-    } catch (Exception $ex) {
-        return $ex->getMessage();
+    }else{
+        
     }
+    
     
     
 }
@@ -223,7 +229,7 @@ function selectCursoProximoCodigo($conn){
         $exib->execute();
         
         if($exib->rowcount() == 0 ){
-            return 1;
+            return 1000;
         }else{
             $exib=$exib->fetch();
             return $exib['codigo'] + 1;

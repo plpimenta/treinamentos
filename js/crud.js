@@ -76,42 +76,41 @@ function treinamentoExcluir(id){
 function gravarFornecedor(){
     
     // PEGA VARIAVEIS DO FORMULARIO //
-    var fornecedorCadastrarCodigo       = document.getElementById('fornecedorCadastrarCodigo').value;
-    var fornecedorCadastrarRazaoSocial  = document.getElementById('fornecedorCadastrarRazaoSocial').value;
-    var fornecedorCadastrarCnpj       = document.getElementById('fornecedorCadastrarCnpj').value;
-    var fornecedorCadastroLogradouro       = document.getElementById('fornecedorCadastroLogradouro').value;
-    var fornecedorCadastrarComplemento       = document.getElementById('fornecedorCadastrarComplemento').value;
-    var fornecedorCadastrarNumero       = document.getElementById('fornecedorCadastrarNumero').value;
-    var fornecedorCadastroCidade       = document.getElementById('fornecedorCadastroCidade').value;
-    var fornecedorCadastroEstado       = document.getElementById('fornecedorCadastroEstado').value;
-    var fornecedorCadastroCep       = document.getElementById('fornecedorCadastroCep').value;
-    var fornecedorCadastrarFone       = document.getElementById('fornecedorCadastrarFone').value;
-    var fornecedorCadastraCelular       = document.getElementById('fornecedorCadastraCelular').value;
-    var fornecedorCadastraWhatsApp       = document.getElementById('fornecedorCadastraWhatsApp').value;
-    var fornecedorCadastroContato       = document.getElementById('fornecedorCadastroContato').value;
-    var fornecedorCadastrarEmail       = document.getElementById('fornecedorCadastrarEmail').value;
-    var fornecedorCadastrarQuemCadastrou       = document.getElementById('fornecedorCadastrarQuemCadastrou').value;
-    // PEGA VARIAVEIS DO FORMULARIO //
+    var fornecedorCadastrarQuemCadastrou    = $('#fornecedorCadastrarQuemCadastrou').val();
+    var fornecedorCadastrarCodigo           = $('#fornecedorCadastrarCodigo').val();
+    var fornecedorCadastrarRazaoSocial      = $('#fornecedorCadastrarRazaoSocial').val();
+    var fornecedorCadastrarCnpj             = $('#fornecedorCadastrarCnpj').val();
+    var fornecedorCadastroLogradouro        = $('#fornecedorCadastroLogradouro').val();
+    var fornecedorCadastrarComplemento      = $('#fornecedorCadastrarComplemento').val();
+    var fornecedorCadastrarNumero           = $('#fornecedorCadastrarNumero').val();
+    var fornecedorCadastroCep               = $('#fornecedorCadastroCep').val();
+    var fornecedorCadastroCidade            = $('#fornecedorCadastroCidade').val();
+    var fornecedorCadastroEstado            = $('#fornecedorCadastroEstado').val();
+    var fornecedorCadastrarFone             = $('#fornecedorCadastrarFone').val();
+    var fornecedorCadastraCelular           = $('#fornecedorCadastraCelular').val();
+    var fornecedorCadastraWhatsApp          = $('#fornecedorCadastraWhatsApp').val();
+    var fornecedorCadastrarEmail            = $('#fornecedorCadastrarEmail').val();
+    var fornecedorCadastroContato           = $('#fornecedorCadastroContato').val();
     
-    // CONCATENA VARIAVEIS PARA ENVIAR VIA AJAX //
-    var dados = "";
-    dados = dados.concat(fornecedorCadastrarCodigo,";");
-    dados = dados.concat(fornecedorCadastrarRazaoSocial,";");
-    dados = dados.concat(fornecedorCadastrarCnpj,";");
-    dados = dados.concat(fornecedorCadastroLogradouro,";");
-    dados = dados.concat(fornecedorCadastrarComplemento,";");
-    dados = dados.concat(fornecedorCadastrarNumero,";");
-    dados = dados.concat(fornecedorCadastroCidade,";");
-    dados = dados.concat(fornecedorCadastroEstado,";");
-    dados = dados.concat(fornecedorCadastroCep,";");
-    dados = dados.concat(fornecedorCadastrarFone,";");
-    dados = dados.concat(fornecedorCadastraCelular,";");
-    dados = dados.concat(fornecedorCadastraWhatsApp,";");
-    dados = dados.concat(fornecedorCadastroContato,";");
-    dados = dados.concat(fornecedorCadastrarEmail,";");
-    dados = dados.concat(fornecedorCadastrarQuemCadastrou);
-    // CONCATENA VARIAVEIS PARA ENVIAR VIA AJAX //
     
+    // ARMAZENA DADOS EM FORMATO JASON NA VARIAVEL DADOS //
+    var dados = '{"fornecedorCadastrarQuemCadastrou":"'+fornecedorCadastrarQuemCadastrou+'",';
+        dados+= '"fornecedorCadastrarCodigo":"'+fornecedorCadastrarCodigo+'",';
+        dados+= '"fornecedorCadastrarRazaoSocial":"'+fornecedorCadastrarRazaoSocial+'",';
+        dados+= '"fornecedorCadastrarCnpj":"'+fornecedorCadastrarCnpj+'",';
+        dados+= '"fornecedorCadastroLogradouro":"'+fornecedorCadastroLogradouro+'",';
+        dados+= '"fornecedorCadastrarComplemento":"'+fornecedorCadastrarComplemento+'",';
+        dados+= '"fornecedorCadastrarNumero":"'+fornecedorCadastrarNumero+'",';
+        dados+= '"fornecedorCadastroCep":"'+fornecedorCadastroCep+'",';
+        dados+= '"fornecedorCadastroCidade":"'+fornecedorCadastroCidade+'",';
+        dados+= '"fornecedorCadastroEstado":"'+fornecedorCadastroEstado+'",';
+        dados+= '"fornecedorCadastrarFone":"'+fornecedorCadastrarFone+'",';
+        dados+= '"fornecedorCadastraCelular":"'+fornecedorCadastraCelular+'",';
+        dados+= '"fornecedorCadastraWhatsApp":"'+fornecedorCadastraWhatsApp+'",';
+        dados+= '"fornecedorCadastrarEmail":"'+fornecedorCadastrarEmail+'",';
+        dados+= '"fornecedorCadastroContato":"'+fornecedorCadastroContato+'"}';
+        
+        alert(dados);
     
     // INSTANCIA VARIAVEL PARA CONEXAO AJAX //
     var xhttp = new XMLHttpRequest();
@@ -119,7 +118,7 @@ function gravarFornecedor(){
       
         if(this.readyState == 4 && this.status == 200 ){
             
-            if(this.responseText){
+            if(this.responseText == "true"){
                 
                 // LIMPA DADOS FORMULARIO //
                 document.getElementById('fornecedorCadastrarCodigo').value="";
@@ -139,11 +138,14 @@ function gravarFornecedor(){
                 // LIMPA DADOS FORMULARIO //
                 
                 
-                notificacao('top', 'right', 'success', 'Fornecedor '+fornecedorCadastrarRazaoSocial+' gravado com sucesso!', 400, 'ti-face-smile');
+                notificacao('Cadastro de Fornecedores','Fornecedor '+ fornecedorCadastrarRazaoSocial + ' cadastrado com sucesso','success');
                 
                 
+            }else if (this.responseText == "cadastrado") {
+                notificacao('Cadastro de Fornecedores','!!! ATENÇÃO !!! Houve um erro ao tentar cadastrar o código  '+ fornecedorCadastrarCodigo + ', já está em uso, verifique os dados e tente novamente','warning');
+        
             }else{
-                notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar gravar o Fornecedor '+fornecedorCadastrarRazaoSocial+', verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
+                notificacao('Cadastro de Fornecedores','!!! ATENÇÃO !!! Houve um erro ao tentar cadastrar o fornecedor '+ fornecedorCadastrarRazaoSocial + ', tente novamente mais tarde','error');
             }
                 
         }
@@ -158,6 +160,7 @@ function atualizarDadosFornecedor(){
     
     // PEGA VARIAVEIS DO FORMULARIO //
     var fornecedorCadastroId       = document.getElementById('fornecedorCadastroId').value;
+    var fornecedorCadastrarCodigo       = document.getElementById('fornecedorCadastrarCodigo').value;
     var fornecedorCadastrarRazaoSocial  = document.getElementById('fornecedorCadastrarRazaoSocial').value;
     var fornecedorCadastrarCnpj       = document.getElementById('fornecedorCadastrarCnpj').value;
     var fornecedorCadastroLogradouro       = document.getElementById('fornecedorCadastroLogradouro').value;
@@ -175,23 +178,23 @@ function atualizarDadosFornecedor(){
     // PEGA VARIAVEIS DO FORMULARIO //
     
     // CONCATENA VARIAVEIS PARA ENVIAR VIA AJAX //
-    var dados = "";
-    dados = dados.concat(fornecedorCadastroId,";");
-    dados = dados.concat(fornecedorCadastrarRazaoSocial,";");
-    dados = dados.concat(fornecedorCadastrarCnpj,";");
-    dados = dados.concat(fornecedorCadastroLogradouro,";");
-    dados = dados.concat(fornecedorCadastrarComplemento,";");
-    dados = dados.concat(fornecedorCadastrarNumero,";");
-    dados = dados.concat(fornecedorCadastroCidade,";");
-    dados = dados.concat(fornecedorCadastroEstado,";");
-    dados = dados.concat(fornecedorCadastroCep,";");
-    dados = dados.concat(fornecedorCadastrarFone,";");
-    dados = dados.concat(fornecedorCadastraCelular,";");
-    dados = dados.concat(fornecedorCadastraWhatsApp,";");
-    dados = dados.concat(fornecedorCadastroContato,";");
-    dados = dados.concat(fornecedorCadastrarEmail,";");
-    dados = dados.concat(fornecedorCadastrarQuemCadastrou);
-    // CONCATENA VARIAVEIS PARA ENVIAR VIA AJAX //
+    var dados = '{"fornecedorCadastroId":"'+fornecedorCadastroId+'",';
+        dados+= '"fornecedorCadastrarCodigo":"'+fornecedorCadastrarCodigo+'",';
+        dados+= '"fornecedorCadastrarRazaoSocial":"'+fornecedorCadastrarRazaoSocial+'",';
+        dados+= '"fornecedorCadastrarCnpj":"'+fornecedorCadastrarCnpj+'",';
+        dados+= '"fornecedorCadastroLogradouro":"'+fornecedorCadastroLogradouro+'",';
+        dados+= '"fornecedorCadastrarComplemento":"'+fornecedorCadastrarComplemento+'",';
+        dados+= '"fornecedorCadastrarNumero":"'+fornecedorCadastrarNumero+'",';
+        dados+= '"fornecedorCadastroCidade":"'+fornecedorCadastroCidade+'",';
+        dados+= '"fornecedorCadastroEstado":"'+fornecedorCadastroEstado+'",';
+        dados+= '"fornecedorCadastroCep":"'+fornecedorCadastroCep+'",';
+        dados+= '"fornecedorCadastrarFone":"'+fornecedorCadastrarFone+'",';
+        dados+= '"fornecedorCadastroCidade":"'+fornecedorCadastroCidade+'",';
+        dados+= '"fornecedorCadastraCelular":"'+fornecedorCadastraCelular+'",';
+        dados+= '"fornecedorCadastraWhatsApp":"'+fornecedorCadastraWhatsApp+'",';
+        dados+= '"fornecedorCadastroContato":"'+fornecedorCadastroContato+'",';
+        dados+= '"fornecedorCadastrarEmail":"'+fornecedorCadastrarEmail+'",';
+        dados+= '"fornecedorCadastrarQuemCadastrou":"'+fornecedorCadastrarQuemCadastrou+'"}';
     
     
     // INSTANCIA VARIAVEL PARA CONEXAO AJAX //
@@ -200,33 +203,14 @@ function atualizarDadosFornecedor(){
       
         if(this.readyState == 4 && this.status == 200 ){
             
-            if(this.responseText){
+            if(this.responseText == "true"){
                                
-                notificacao('top', 'right', 'success', 'Fornecedor '+fornecedorCadastrarRazaoSocial+' gravado com sucesso!', 400, 'ti-face-smile');
-                
-                var retorno = JSON.parse(this.responseText);
-                
-                // ALIMENTA FORMULARIO PARA ALTERACAO DE DADOS
-                document.getElementById('fornecedorCadastrarCodigo').value=retorno.fornecedor_codigo;
-                document.getElementById('fornecedorCadastroId').value=fornecedorCadastroId;
-                document.getElementById('fornecedorCadastrarRazaoSocial').value=retorno.fornecedor_descricao;
-                document.getElementById('fornecedorCadastrarCnpj').value=retorno.fornecedor_cnpj;
-                document.getElementById('fornecedorCadastroLogradouro').value=retorno.fornecedor_endereco_logradouro;
-                document.getElementById('fornecedorCadastrarComplemento').value=retorno.fornecedor_endereco_complemento;
-                document.getElementById('fornecedorCadastrarNumero').value=retorno.fornecedor_numero;
-                document.getElementById('fornecedorCadastroCidade').value=retorno.fornecedor_cidade;
-                document.getElementById('fornecedorCadastroEstado').value=retorno.fornecedor_estado;
-                document.getElementById('fornecedorCadastroCep').value=retorno.fornecedor_cep;
-                document.getElementById('fornecedorCadastrarFone').value=retorno.fornecedor_fone;
-                document.getElementById('fornecedorCadastraCelular').value=retorno.fornecedor_celular;
-                document.getElementById('fornecedorCadastraWhatsApp').innerHTML="<option>"+retorno.fornecedor_whatsapp+"</option>";
-                document.getElementById('fornecedorCadastroContato').value=retorno.fornecedor_contato;
-                document.getElementById('fornecedorCadastrarEmail').value=retorno.fornecedor_email;
-                // ALIMENTA FORMULARIO PARA ALTERACAO DE DADOS
-                
+                notificacao('Cadastro de Fornecedor','Dados atualizados com sucesso.','success');
+                               
                 
             }else{
-                notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar gravar o Fornecedor '+fornecedorCadastrarRazaoSocial+', verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
+                
+                notificacao('Cadastro de Fornecedor','!!! ATENÇÃO !!! Houve uma falha ao tentar gravar aos dados.','error');
             }
                 
         }
@@ -279,32 +263,12 @@ function fornecedorGerenciarEditar(id){
     xhttp.send();
 }
 
-function fornecedorDeletar(id){
+function fornecedorDeletar(id,alteradoPor){
     
     
     if(confirm('!!! ATENÇÃO !!! VOCÊ TEM CERTEZA QUE DESEJA APAGAR ESTE FORNECEDOR ?')){
      
-        // INSTANCIA XHTTP PARA AJAX //
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function(){
-          if(this.readyState == 4 && this.status == 200 ){
-              
-                if(this.responseText == "false"){
-                  
-                      notificacao('top', 'right', 'warning', '!!! ATENÇÃO !!! Houve uma falha ao tentar deletar o Fornecedor, verifique os dados digitados e tente novamente!', 400, 'ti-face-sad');
-              
-                }else{
-               
-                     // MENSAGEM DE NOTIFICAÇÃO PARA O USUARIO //
-                      notificacao('top', 'right', 'success', 'Fornecedor deletado com sucesso!', 400, 'ti-face-smile');
-                      
-                      
-                }
-          }  
-        };
-        xhttp.open("GET","../ajax/ajax.php?fornecedorDeletar=1&id="+id);
-        xhttp.send();
-        
+        window.location='../ajax/ajax.php?fornecedorDeletar=1&id='+id+'&alteradoPor='+alteradoPor;
     }
 }
 
@@ -319,6 +283,8 @@ function cursoGravar(){
     var cursoCargaHorariaReciclagem = $('#cursoCargaHorariaReciclagem').val();
     var cursoReferencia = $('#cursoReferencia').val();
     var cursoValidadeTreinamento = $('#cursoValidadeTreinamento').val();
+    var cursoFormacaoPossuiPratica = $('#cursoFormacaoPossuiPratica').val();
+    var cursoReciclagemPossuiPratica = $('#cursoReciclagemPossuiPratica').val();
     
    
     //CONCATENA DADOS PARA ENVIO
@@ -329,6 +295,8 @@ function cursoGravar(){
         dados+='"cursoCargaHorariaFormacao":"'+cursoCargaHorariaFormacao+'",';
         dados+='"cursoCargaHorariaReciclagem":"'+cursoCargaHorariaReciclagem+'",';
         dados+='"cursoReferencia":"'+cursoReferencia+'",';
+        dados+='"cursoFormacaoPossuiPratica":"'+cursoFormacaoPossuiPratica+'",';
+        dados+='"cursoReciclagemPossuiPratica":"'+cursoReciclagemPossuiPratica+'",';
         dados+='"cursoValidadeTreinamento":"'+cursoValidadeTreinamento+'"}';
         
   
@@ -413,6 +381,8 @@ function cursoGravarAtualizar(){
     var cursoCargaHorariaFormacao = $('#cursoCargaHorariaFormacao').val();
     var cursoCargaHorariaReciclagem = $('#cursoCargaHorariaReciclagem').val();
     var cursoReferencia = $('#cursoReferencia').val();
+    var cursoFormacaoPossuiPratica = $('#cursoFormacaoPossuiPratica').val();
+    var cursoReciclagemPossuiPratica = $('#cursoReciclagemPossuiPratica').val();
     var cursoValidadeTreinamento = $('#cursoValidadeTreinamento').val();
     
    
@@ -424,6 +394,8 @@ function cursoGravarAtualizar(){
         dados+='"cursoCargaHorariaFormacao":"'+cursoCargaHorariaFormacao+'",';
         dados+='"cursoCargaHorariaReciclagem":"'+cursoCargaHorariaReciclagem+'",';
         dados+='"cursoReferencia":"'+cursoReferencia+'",';
+        dados+='"cursoFormacaoPossuiPratica":"'+cursoFormacaoPossuiPratica+'",';
+        dados+='"cursoReciclagemPossuiPratica":"'+cursoReciclagemPossuiPratica+'",';
         dados+='"cursoValidadeTreinamento":"'+cursoValidadeTreinamento+'"}';
     
     var xhttp = new XMLHttpRequest();
@@ -431,9 +403,6 @@ function cursoGravarAtualizar(){
       if( this.readyState == 4 && this.status == 200 ){
           
           if( this.responseText == "true"){
-              
-              // EXIBE DADOS ATUALIZADOS PARA CLIENTE
-              treinamentoGerenciarEditar(cursoCodigo,cursoCadastradoPor);
               
               // EXIBE MENSAGEM DE SUCESSO AO USUARIO //
               notificacao('Gerenciamento Curso' , 'Dados atualizados com sucesso.','success');

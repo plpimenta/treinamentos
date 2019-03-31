@@ -49,7 +49,7 @@ function validaFornecedorJaCadastrado(){
                     notificacao('Cadastro de Fornecedor ','!!! ATENÇÃO !!! Este CNPJ já está em uso, por favor verifique os dados do fornecedor em questão.','error');
                     document.getElementById('fornecedorCadastrarGravar').disabled=true;
                 }else{
-                    notificacao('Cadastro de Fornecedor ','!!! Este CNPJ já está em uso, por favor verifique os dados do fornecedor em questão.','success');
+                    notificacao('Cadastro de Fornecedor ','CNPJ Disponível para cadastro.','success');
                     document.getElementById('fornecedorCadastrarGravar').disabled=false;
                 }
                     
@@ -72,7 +72,11 @@ function validaCursoJaCadastrado(){
           
           if(this.responseText == "true"){
               notificacao('Cadastro de Curso ','!!! ATENÇÃO !!! Este nome já está em uso, por favor verifique os dados e tente novamente.','error');
+              document.getElementById('cursoGravarBtn').disabled=true;
+          }else{
+              document.getElementById('cursoGravarBtn').disabled=false;
           }
+              
               
       }  
     };

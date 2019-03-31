@@ -140,4 +140,17 @@ function funcaoGravarAtualizarUsuario($conn,$dados){
      return $dados;        
      
  }
+ function tratarCnpjParaGravar($dados){
+    $dados= str_replace(".","", $dados);
+    $dados= str_replace("/","", $dados);
+    $dados= str_replace("-","", $dados);
+    
+    return $dados;
+ }
+ function tratarCepParaGravar($dados){
+     $dados= str_replace(".","",$dados);
+     $dados= str_replace("-","",$dados);
+     return $dados;
+ }
+ 
 ?>

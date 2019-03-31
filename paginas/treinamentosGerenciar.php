@@ -47,13 +47,12 @@
                     <table id="datatable" class="table table-striped table-bordered">
                       <thead>
                       <tr class="tabela-formata-titulo">
-                            <th style="font-size: 12px;text-align:center;"">DESCRIÇÃO</th>
                             <th style="font-size: 12px;text-align:center;">CÓD</th>
-                            <th style="font-size: 12px;text-align:center;">INSTRUTOR</th>
-                            <th style="font-size: 12px;text-align:center;">HORAS FORMAÇÃO</th>
-                            <th style="font-size: 12px;text-align:center;">VALIDADE</th>
-                            <th style="font-size: 12px;text-align:center;">CADASTRADO POR</th>
-                            <th style="font-size: 12px;text-align:center;">DATA CADASTRO</th>
+                            <th style="font-size: 12px;text-align:center;">TREINAMENTO</th>
+                            <th style="font-size: 12px;text-align:center;">FORMAÇÃO</th>
+                            <th style="font-size: 12px;text-align:center;">RECICLAGEM</th>
+                            <th style="font-size: 12px;text-align:center;">REFERÊNCIA</th>
+                            <th style="font-size: 12px;text-align:center;">PERIODICIDADE</th>
                             <th style="font-size: 12px;text-align:center;">ULTIMA ALTERAÇÃO</th>
                             <th style="font-size: 12px;text-align:center;"></th>
                             <th style="font-size: 12px;text-align:center;"></th>
@@ -63,8 +62,7 @@
                         <!--IMPRIME CORPO DA TABELA-->   
                         <?php
                             
-                        $contador=0;
-
+                        
                         while($treinamento=$treinamentos->fetch()){
                            
                                     
@@ -76,39 +74,19 @@
                                         $dataAlteracao='<td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_alteracao'])).'</td>';
                                         
                                     }
-                                    
-                            
-                                    if($contador % 2 == 0 ){
-
+                              
                                         echo '<tr>
-                                               <td class="tabela-formata-linha-fonte">'.$treinamento['treinamento_descricao'].'</td>
                                                <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_codigo'].'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_validade'].'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
+                                               <td class="tabela-formata-linha-fonte">'.$treinamento['treinamento_descricao'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_formacao'].' h</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_reciclagem'].' h</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'. $treinamento['treinamento_referencia'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'. $treinamento['treinamento_validade'].'</td>
                                                '.$dataAlteracao.'
                                                <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><a href="treinamentosEditar.php?id='.$treinamento['treinamento_id'].'"<i class="fa fa-pencil"></i></td>
                                                <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><i class="fa fa-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$row_usu_info['usuario_id'].'\')"></i></td>
                                           </tr>'; 
 
-                                    }else{
-                                        echo '<tr>
-                                               <td class="tabela-formata-linha-fonte">'.$treinamento['treinamento_descricao'].'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_codigo'].'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectInstrutornNome($conn,$treinamento['treinamento_origem_instrutor'],$treinamento['treinamento_instrutor']).'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_formacao'].'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_validade'].'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.selectNomeQuemCadastrou($conn, $treinamento['treinamento_cadastrado_por']).'</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.date("d/m/Y H:i:s", strtotime($treinamento['treinamento_data_cadastro'])).'</td>
-                                               '.$dataAlteracao.'
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><a href="treinamentosEditar.php?id='.$treinamento['treinamento_id'].'"<i class="fa fa-pencil"></i></td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><i class="fa fa-close" onclick="treinamentoDeletar(\''.$treinamento['treinamento_id'].'\',\''.$row_usu_info['usuario_id'].'\')"></i></td>
-                                          </tr>'; 
-                                    }
-
-                                    $contador++;
                             
                         } # FECHA WHILE
                         } # FECHA IF INICIAL   

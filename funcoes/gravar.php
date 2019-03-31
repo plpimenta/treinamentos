@@ -57,39 +57,45 @@ function gravarFornecedor($conn,$dados){
     try {
     
         # TRATA CNPJ PARA GRAVACAO #
-        $dados[2]= str_replace(".","", $dados[2]);
-        $dados[2]= str_replace("/","", $dados[2]);
-        $dados[2]= str_replace("-","", $dados[2]);
+        $dados->fornecedorCadastrarCnpj= tratarCnpjParaGravar($dados->fornecedorCadastrarCnpj);
         
+        # TRATA CEP PARA GRAVACAO
+        $dados->fornecedorCadastroCep= tratarCepParaGravar($dados->fornecedorCadastroCep);
         
+        #CONVERTE DADOS PARA MAIUSCULO PARA GRAVAR NO BANCO
+        $dados= funcaoConverteDadosObjetoParaMaiusculo($dados);
+        echo "<pre>";
+        print_r($dados);
+    echo "</pre>";
+    
        $gravar=$conn->prepare('INSERT INTO fornecedores VALUES (null , :codigo , :razaoSocial , :cnpj , :logradouro , :complemento , :cep , :numero,:cidade ,
                                 :estado  , :fone , :celular , :whatsapp , :email, :contato , :dataCadastro , :dataAtualizacao , :cadastradoPor ,:status)');
-        $gravar->bindValue(":codigo",$dados[0]);
-        $gravar->bindValue(":razaoSocial", strtoupper($dados[1]));
-        $gravar->bindValue(":cnpj",$dados[2]);
-        $gravar->bindValue(":logradouro", strtoupper($dados[3]));
-        $gravar->bindValue(":complemento",strtoupper($dados[4]));
-        $gravar->bindValue(":numero",$dados[5]);
-        $gravar->bindValue(":cidade",strtoupper($dados[6]));
-        $gravar->bindValue(":estado",strtoupper($dados[7]));
-        $gravar->bindValue(":cep",$dados[8]);
-        $gravar->bindValue(":fone",$dados[9]);
-        $gravar->bindValue(":celular",$dados[10]);
-        $gravar->bindValue(":whatsapp",strtoupper($dados[11]));
-        $gravar->bindValue(":contato",strtoupper($dados[12]));
-        $gravar->bindValue(":email",strtoupper($dados[13]));
+        $gravar->bindValue(":codigo",$dados->fornecedorCadastrarCodigo);
+        $gravar->bindValue(":razaoSocial",$dados->fornecedorCadastrarRazaoSocial);
+        $gravar->bindValue(":cnpj",$dados->fornecedorCadastrarCnpj);
+        $gravar->bindValue(":logradouro", $dados->fornecedorCadastroLogradouro);
+        $gravar->bindValue(":complemento", $dados->fornecedorCadastrarComplemento);
+        $gravar->bindValue(":numero",$dados->fornecedorCadastrarNumero);
+        $gravar->bindValue(":cidade",$dados->fornecedorCadastroCidade);
+        $gravar->bindValue(":estado",$dados->fornecedorCadastroEstado);
+        $gravar->bindValue(":cep",$dados->fornecedorCadastroCep);
+        $gravar->bindValue(":fone",$dados->fornecedorCadastrarFone);
+        $gravar->bindValue(":celular",$dados->fornecedorCadastraCelular);
+        $gravar->bindValue(":whatsapp",$dados->fornecedorCadastraWhatsApp);
+        $gravar->bindValue(":contato",$dados->fornecedorCadastroContato);
+        $gravar->bindValue(":email",$dados->fornecedorCadastrarEmail);
         $gravar->bindValue(":dataCadastro",date("Y-m-d H:i:s"));
         $gravar->bindValue(":dataAtualizacao",date("Y-m-d H:i:s"));
-        $gravar->bindValue(":cadastradoPor",$dados[14]);
+        $gravar->bindValue(":cadastradoPor",$dados->fornecedorCadastrarQuemCadastrou);
         $gravar->bindValue(":status",1);
         $gravar->execute();
         if($gravar){
-           echo 1;
+           echo "true";
         }
         
     } catch (Exception $ex) {
             echo "falha";
-            echo var_dump($ex->getMessage());
+            echo $ex->getMessage();
     }
     
 }
@@ -98,46 +104,35 @@ function gravarFornecedorAtualizar($conn,$dados){
     
     try {
     
-        # TRATA CNPJ PARA GRAVACAO #
-        $dados[2]= str_replace(".","", $dados[2]);
-        $dados[2]= str_replace("/","", $dados[2]);
-        $dados[2]= str_replace("-","", $dados[2]);
-        
+        # TRATA DADOS PARA GRAVACAO #
+        $dados->fornecedorCadastrarCnpj= tratarCnpjParaGravar($dados->fornecedorCadastrarCnpj);
+        $dados->fornecedorCadastroCep= tratarCepParaGravar($dados->fornecedorCadastroCep);
+        $dados= funcaoConverteDadosObjetoParaMaiusculo($dados);
         
        $gravar=$conn->prepare('UPDATE fornecedores SET  fornecedor_descricao = :razaoSocial , fornecedor_cnpj = :cnpj , fornecedor_endereco_logradouro = :logradouro ,
                               fornecedor_endereco_complemento = :complemento , fornecedor_cep = :cep , fornecedor_numero = :numero, fornecedor_cidade = :cidade ,
                               fornecedor_estado = :estado  , fornecedor_fone = :fone , fornecedor_celular =  :celular , fornecedor_whatsapp =  :whatsapp , 
                               fornecedor_email = :email, fornecedor_contato = :contato , fornecedor_data_atualizacao = :dataAtualizacao , 
-                              fornecedor_alterado_por =  :cadastradoPor WHERE fornecedor_id = :codigo');
-        $gravar->bindValue(":codigo",$dados[0]);
-        $gravar->bindValue(":razaoSocial", strtoupper($dados[1]));
-        $gravar->bindValue(":cnpj",$dados[2]);
-        $gravar->bindValue(":logradouro", strtoupper($dados[3]));
-        $gravar->bindValue(":complemento",strtoupper($dados[4]));
-        $gravar->bindValue(":numero",$dados[5]);
-        $gravar->bindValue(":cidade",strtoupper($dados[6]));
-        $gravar->bindValue(":estado",strtoupper($dados[7]));
-        $gravar->bindValue(":cep",$dados[8]);
-        $gravar->bindValue(":fone",$dados[9]);
-        $gravar->bindValue(":celular",$dados[10]);
-        $gravar->bindValue(":whatsapp",strtoupper($dados[11]));
-        $gravar->bindValue(":contato",strtoupper($dados[12]));
-        $gravar->bindValue(":email",strtoupper($dados[13]));
+                              fornecedor_alterado_por =  :cadastradoPor WHERE fornecedor_id = :id');
+        $gravar->bindValue(":id",$dados->fornecedorCadastroId);
+        $gravar->bindValue(":razaoSocial", $dados->fornecedorCadastrarRazaoSocial);
+        $gravar->bindValue(":cnpj",$dados->fornecedorCadastrarCnpj);
+        $gravar->bindValue(":logradouro", $dados->fornecedorCadastroLogradouro);
+        $gravar->bindValue(":complemento",$dados->fornecedorCadastrarComplemento);
+        $gravar->bindValue(":numero",$dados->fornecedorCadastrarNumero);
+        $gravar->bindValue(":cidade",$dados->fornecedorCadastroCidade);
+        $gravar->bindValue(":estado",$dados->fornecedorCadastroEstado);
+        $gravar->bindValue(":cep",$dados->fornecedorCadastroCep);
+        $gravar->bindValue(":fone",$dados->fornecedorCadastrarFone);
+        $gravar->bindValue(":celular",$dados->fornecedorCadastraCelular);
+        $gravar->bindValue(":whatsapp",$dados->fornecedorCadastraWhatsApp);
+        $gravar->bindValue(":contato",$dados->fornecedorCadastroContato);
+        $gravar->bindValue(":email",$dados->fornecedorCadastrarEmail);
         $gravar->bindValue(":dataAtualizacao",date("Y-m-d H:i:s"));
-        $gravar->bindValue(":cadastradoPor",$dados[14]);
+        $gravar->bindValue(":cadastradoPor",$dados->fornecedorCadastrarQuemCadastrou);
         $gravar->execute();
         if($gravar){
-            try {
-    
-                $exib=$conn->prepare('SELECT * FROM fornecedores WHERE fornecedor_id = :id');
-                $exib->bindValue(":id",$dados[0]);
-                $exib->execute();
-                $exib=$exib->fetch();
-                echo json_encode($exib);
-                
-            } catch (Exception $ex) {
-                return $ex->getMessage();
-            }
+            echo "true";
         }
         
     } catch (Exception $ex) {
@@ -188,7 +183,8 @@ function gravarTreinamento($conn,$dados){
         try {
             # GRAVA TREINAMENTO #
             $gravar=$conn->prepare('INSERT INTO treinamentos VALUES (null , :codigo , :descricao , :cargaHorariaFormacao , :cargaHorariaReciclagem ,
-                                    :validade , :reciclagem , :cadastradoPor , :dataCadastro , :alteradoPor , :dataAlterado , :referencia , :status)');
+                                    :validade , :reciclagem , :cadastradoPor , :dataCadastro , :alteradoPor , :dataAlterado , :referencia ,
+                                    :cursoFormacaoPossuiPratica , :cursoReciclagemPossuiPratica ,:status)');
             $gravar->bindValue(":codigo",$codigo);
             $gravar->bindValue(":descricao",$dados->cursoNome);
             $gravar->bindValue(":cargaHorariaFormacao",$dados->cursoCargaHorariaFormacao);
@@ -200,15 +196,16 @@ function gravarTreinamento($conn,$dados){
             $gravar->bindValue(":alteradoPor",NULL);
             $gravar->bindValue(":dataAlterado",NULL);
             $gravar->bindValue(":referencia",$dados->cursoReferencia);
+            $gravar->bindValue(":cursoFormacaoPossuiPratica",$dados->cursoFormacaoPossuiPratica);
+            $gravar->bindValue(":cursoReciclagemPossuiPratica",$dados->cursoReciclagemPossuiPratica);
             $gravar->bindValue(":status",1);
             $gravar->execute();
         
             if($gravar){
-                
-                return true;
+                echo "true";
             }
         } catch (Exception $ex) {
-                return $ex->getMessage();
+            return $ex->getMessage();
         }
 }
 
@@ -235,12 +232,12 @@ function gravarApagarTreinamento($conn,$dados){
 function gravarTreinamentoAtualizar($conn,$dados){
     
      try {
-        
        
           $gravar=$conn->prepare('UPDATE treinamentos SET treinamento_descricao = :descricao , treinamento_referencia = :referencia , 
                                 treinamento_carga_horaria_formacao =  :cargaHorariaFormacao , treinamento_carga_horaria_reciclagem = :cargaHorariaReciclagem,
-                                treinamento_validade = :validade  , treinamento_reciclagem = :reciclagem , 
-                                treinamento_alterado_por = :alteradoPor , treinamento_data_alteracao = :dataAlteracao WHERE treinamento_codigo = :codigo');
+                                treinamento_validade = :validade  , treinamento_reciclagem = :reciclagem , treinamento_formacao_pratica = :formacaoPratica ,
+                                treinamento_alterado_por = :alteradoPor , treinamento_data_alteracao = :dataAlteracao ,
+                                treinamento_reciclagem_pratica = :reciclagemPratica WHERE treinamento_codigo = :codigo');
           $gravar->bindValue(":descricao",$dados->cursoNome);
           $gravar->bindValue(":referencia",$dados->cursoReferencia);
           $gravar->bindValue(":cargaHorariaFormacao",$dados->cursoCargaHorariaFormacao);
@@ -249,6 +246,8 @@ function gravarTreinamentoAtualizar($conn,$dados){
           $gravar->bindValue(":reciclagem",$dados->cursoPossuiReciclagem);
           $gravar->bindValue(":alteradoPor",$dados->cursoCadastradoPor);
           $gravar->bindValue(":dataAlteracao",date("Y-m-d H:i:s"));
+          $gravar->bindValue(":formacaoPratica",$dados->cursoFormacaoPossuiPratica);
+          $gravar->bindValue(":reciclagemPratica",$dados->cursoReciclagemPossuiPratica);
           $gravar->bindValue(":codigo",$dados->cursoCodigo);
           $gravar->execute();
           

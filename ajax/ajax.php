@@ -35,34 +35,33 @@ if($_GET['treinamentoExcluir']){
 
 if($_GET['gravarFornecedor']){
     
-    # RECEBE DADOS VINDOS AJAX VIA PARAMETRO #
-    $dados=$_GET['dados'];
     
-    # DIVIDE DADOS PARA ARRAY USANDO COMO DELIMITADOR , #
-    $dados= explode(";", $dados);
+    # RECEBE DADOS VINDOS AJAX VIA PARAMETRO #
+    $dados= json_decode($_GET['dados']);
+    
+    
     
     # VALIDA SE JA EXISTE FORNECEDOR CADASTRADO COM O CODIGO INFORMADO #
-    $valida=validaFornecedorCadastrado($conn,$dados[0]);
+    $valida=validaFornecedorCadastrado($conn,$dados->fornecedorCadastrarCnpj);
+    
     
     # CASO O RETORNO PARA VALIDA SEJA FALSE , EFETUA A GRAVAÇÃO POIS O FONECEDOR NÃO FOI CADASTRADO #
     if($valida){
+        echo "cadastrado";
     
-        echo "falha";
     }else{
+    
         gravarFornecedor($conn,$dados);
-        
     }
+        
         
     
 }
 if($_GET['atualizaDadosFornecedor']){
     
     # RECEBE DADOS VINDOS AJAX VIA PARAMETRO #
-    $dados=$_GET['dados'];
-    
-    # DIVIDE DADOS PARA ARRAY USANDO COMO DELIMITADOR , #
-    $dados= explode(";", $dados);
-    
+    $dados= json_decode($_GET['dados']);
+        
     
     # ATUALIZA DADOS FORNECEDOR #
     gravarFornecedorAtualizar($conn,$dados);
@@ -137,76 +136,15 @@ if($_GET['fornecedorDeletar']){
     # CHAMA FUNCAO PARA DELETAR FORNECEDOR #
     $valida=gravarFornecedorExcluir($conn,$id);
     
-    # SELECIONA DADOS PARA MONTAR TABELA PARA ATUALIZA DADOS PARA USUARIO #
-    $fornecedores=selectFornecedores($conn);
+    if($valida){
+        echo "<script>alert('Fornecedor excluido com sucesso.)</script>";
+        echo "<script>window.location='../paginas/fornecedorGerenciar.php'</script>";
+    }else{
+        echo "<script>alert('!!! ATENÇÃO !!! Houve uma falha ao tentar excluir o fornecedor..)</script>";
+        echo "<script>window.location='../paginas/fornecedorGerenciar.php'</script>";
+    }
+        
     
-    
-    if($fornecedores->rowcount() == 0 ){
-              
-          echo '<div class="alert alert-warning">
-                  <strong>!!! ATENÇÃO!!!</strong> Não há fornecedores cadastrados. <a href="fornecedorInserir.php">CLIQUE AQUI APRA CADASTRAR</a>.
-                </div>';
-      }else{
-          $dados='<table class="table table-condensed">
-                    <thead>
-                        <tr class="tabela-titulo">
-                            <th style="font-size: 13px;">DESCRIÇÃO</th>
-                            <th style="font-size: 13px;">CNPJ</th>
-                            <th style="font-size: 13px;">CONTATO</th>
-                            <th style="font-size: 13px;">FONE</th>
-                            <th style="font-size: 13px;">CELULAR</th>
-                            <th style="font-size: 13px;">EMAIL</th>
-                            <th style="font-size: 13px;">CIDADE</th>
-                            <th style="font-size: 13px;">UF</th>
-                            <th style="font-size: 13px;"></th>
-                            <th style="font-size: 13px;"></th>
-                        </tr>
-                    </thead>
-                    <tbody>';
-          
-              #CONTADOR PARA FORMATACAO DE LINHA      
-              $contador=0;
-            
-                while($fornecedor=$fornecedores->fetch()){
-                    
-                    if($contador % 2 == 0){
-                        $dados.='<tr class="tabela-linha tabela-linha-centraliza tabela-linha-clara">
-                                   <td>'.$fornecedor['fornecedor_descricao'].'</td>
-                                   <td>'.formatarCnpj($fornecedor['fornecedor_cnpj']).'</td>
-                                   <td>'.$fornecedor['fornecedor_contato'].'</td>
-                                   <td>'.$fornecedor['fornecedor_fone'].'</td>
-                                   <td>'.$fornecedor['fornecedor_celular'].'</td>
-                                   <td>'.$fornecedor['fornecedor_email'].'</td>
-                                   <td>'.$fornecedor['fornecedor_cidade'].'</td>
-                                   <td>'.$fornecedor['fornecedor_estado'].'</td>
-                                   <td><i class="ti-pencil" onclick="fornecedorGerenciarEditar(\''.$fornecedor['fornecedor_id'].'\')"></i></td>
-                                   <td><i class="ti-close" onclick="fornecedorDeletar(\''.$fornecedor['fornecedor_id'].'\')"></i></td>
-                              </tr>';                
-                    }else{
-                        $dados.='<tr class="tabela-linha tabela-linha-centraliza tabela-linha-escura">
-                                   <td>'.$fornecedor['fornecedor_descricao'].'</td>
-                                   <td>'.formatarCnpj($fornecedor['fornecedor_cnpj']).'</td>
-                                   <td>'.$fornecedor['fornecedor_contato'].'</td>
-                                   <td>'.$fornecedor['fornecedor_fone'].'</td>
-                                   <td>'.$fornecedor['fornecedor_celular'].'</td>
-                                   <td>'.$fornecedor['fornecedor_email'].'</td>
-                                   <td>'.$fornecedor['fornecedor_cidade'].'</td>
-                                   <td>'.$fornecedor['fornecedor_estado'].'</td>
-                                   <td><i class="ti-pencil" onclick="fornecedorGerenciarEditar(\''.$fornecedor['fornecedor_id'].'\')"></i></td>
-                                   <td><i class="ti-close" onclick="fornecedorDeletar(\''.$fornecedor['fornecedor_id'].'\')"></i></td>
-                              </tr>';                
-                        
-                    }
-                    $contador++;
-                    
-                }
-          
-    
-            $dados.='</tbody>
-                </table>' ;   
-      }
-      
-      echo $dados;
 }
 
 if($_GET['treinamentoGerenciarEditar']){

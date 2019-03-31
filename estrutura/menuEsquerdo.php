@@ -54,8 +54,9 @@
                     </li>
                     <li><a><i class="fa fa-cubes"></i> Fornecedores <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="#">Cadastro</a></li>
-                            <li><a href="#">Gerenciar</a></li>
+                            <li><a href="fornecedorCadastrar.php">Cadastrar</a></li>
+                            <li><a href="fornecedorGerenciar.php">Gerenciar</a></li>
+                            <li style="display: none;"><a href="fornecedoresEditar.php">Editar</a></li>
                             <li><a href="#">Importar</a></li>
                           </ul>
                     </li>

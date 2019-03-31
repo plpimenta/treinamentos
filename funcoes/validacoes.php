@@ -1,23 +1,23 @@
 <?php
 
-function validaFornecedorCadastrado($conn,$fornecedorCodigo){
+function validaFornecedorCadastrado($conn,$fornecedorCnpj){
     
     try{
-        $valida=$conn->prepare('SELECT fornecedor_id FROM fornecedores WHERE fornecedor_id = :id');
-        $valida->bindValue(":id",$fornecedorCodigo);
+        $valida=$conn->prepare('SELECT fornecedor_id FROM fornecedores WHERE fornecedor_cnpj = :cnpj');
+        $valida->bindValue(":cnpj",$fornecedorCnpj);
         $valida->execute();
-        
+        if($valida->rowcount() == 0 ){
+            return false;
+        }else{
+            return true;
+        }
         
     } catch (Exception $ex) {
-        
+        return $ex->getMessage();
     }
     
-    if($valida->rowcount() == 0 ){
-        $status=false;
-    }else{
-        $status=true;
-    }
-    return $status;
+    
+    
 }
 
 function validaCodigoFornecedor($conn,$cnpj){
@@ -34,9 +34,10 @@ function validaCodigoFornecedor($conn,$cnpj){
         
         if($valida->rowcount() == 0 ){
             echo "false";
-        }else{
+        } else {
             echo "true";
         }
+            
         
     } catch (Exception $ex) {
             echo $ex->getMessage();

@@ -15,7 +15,7 @@
     <div class="row top_tiles"> <!-- top tiles -->
 
         <!--EDITAR DAQUI PARA BAIXO-->
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-7 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
                     <h2>Cadastro de Curso</h2>
@@ -57,11 +57,28 @@
                                     <label for="cursoCargaHorariaFormacao">Carga Horária Formação</label>
                                     <input type="number" id="cursoCargaHorariaFormacao" name="cursoCargaHorariaFormacao" class="form-control border-input" placeholder="Informe a carga horária" value="0" />
                                 </div>
-                                <div class="col-lg-4 col-sm-3" hidden="" id="cursoCargaHorariaReciclagemExibir">
+                                <div class="col-lg-4 col-sm-3">
+                                    <label for="cursoFormacaoPossuiPratica">Treinamento Prático ?</label>
+                                    <select id="cursoFormacaoPossuiPratica" name="cursoFormacaoPossuiPratica" class="form-control border-input">
+                                        <option>NAO</option>
+                                        <option>SIM</option>
+                                    </select>
+                                </div>
+                            </div>
+                              <br>
+                              <div class="row" id="cursoCargaHorariaReciclagemExibir" hidden="">
+                                <div class="col-lg-4 col-sm-3"></div>
+                                <div class="col-lg-4 col-sm-3">
                                     <label for="cursoCargaHorariaReciclagem">Carga Horária Reciclagem</label>
                                     <input type="number" id="cursoCargaHorariaReciclagem" name="cursoCargaHorariaReciclagem" class="form-control border-input" placeholder="Informe a carga horária" value="0" />
                                 </div>
-
+                                <div class="col-lg-4 col-sm-1">
+                                   <label for="cursoReciclagemPossuiPratica">Treinamento Prático ?</label>
+                                    <select id="cursoReciclagemPossuiPratica" name="cursoReciclagemPossuiPratica" class="form-control border-input">
+                                        <option>NAO</option>
+                                        <option>SIM</option>
+                                    </select>
+                                </div>
                             </div>
                             <br>
                             <div class="row">
