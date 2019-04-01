@@ -285,6 +285,8 @@ function cursoGravar(){
     var cursoValidadeTreinamento = $('#cursoValidadeTreinamento').val();
     var cursoFormacaoPossuiPratica = $('#cursoFormacaoPossuiPratica').val();
     var cursoReciclagemPossuiPratica = $('#cursoReciclagemPossuiPratica').val();
+    var cursoConteudoProgramatico = $('#cursoConteudoProgramatico').val();
+    var cursoProficiencia = $('#cursoProficiencia').val();
     
    
     //CONCATENA DADOS PARA ENVIO
@@ -297,6 +299,8 @@ function cursoGravar(){
         dados+='"cursoReferencia":"'+cursoReferencia+'",';
         dados+='"cursoFormacaoPossuiPratica":"'+cursoFormacaoPossuiPratica+'",';
         dados+='"cursoReciclagemPossuiPratica":"'+cursoReciclagemPossuiPratica+'",';
+        dados+='"cursoConteudoProgramatico":"'+cursoConteudoProgramatico+'",';
+        dados+='"cursoProficiencia":"'+cursoProficiencia+'",';
         dados+='"cursoValidadeTreinamento":"'+cursoValidadeTreinamento+'"}';
         
   
@@ -311,6 +315,8 @@ function cursoGravar(){
                 cursoCargaHorariaFormacao = document.getElementById('cursoCargaHorariaFormacao').value="";
                 cursoCargaHorariaReciclagem = document.getElementById('cursoCargaHorariaReciclagem').value="";
                 cursoValidadeTreinamento = document.getElementById('cursoValidadeTreinamento').value="";
+                cursoValidadeTreinamento = document.getElementById('cursoProficiencia').value="";
+                cursoValidadeTreinamento = document.getElementById('cursoConteudoProgramatico').value="";
                 $("#cursoPossuiReciclagem option:contains(Selecione)").attr('selected', true);
                 $("#cursoReferencia option:contains(Selecione)").attr('selected', true);
               // ZERA DADOS FORMULARIO //
@@ -383,7 +389,9 @@ function cursoGravarAtualizar(){
     var cursoReferencia = $('#cursoReferencia').val();
     var cursoFormacaoPossuiPratica = $('#cursoFormacaoPossuiPratica').val();
     var cursoReciclagemPossuiPratica = $('#cursoReciclagemPossuiPratica').val();
+    var cursoConteudoProgramatico = $('#cursoConteudoProgramatico').val();
     var cursoValidadeTreinamento = $('#cursoValidadeTreinamento').val();
+    var cursoProficiencia = $('#cursoProficiencia').val();
     
    
     //CONCATENA DADOS PARA ENVIO
@@ -396,6 +404,8 @@ function cursoGravarAtualizar(){
         dados+='"cursoReferencia":"'+cursoReferencia+'",';
         dados+='"cursoFormacaoPossuiPratica":"'+cursoFormacaoPossuiPratica+'",';
         dados+='"cursoReciclagemPossuiPratica":"'+cursoReciclagemPossuiPratica+'",';
+        dados+='"cursoConteudoProgramatico":"'+cursoConteudoProgramatico+'",';
+        dados+='"cursoProficiencia":"'+cursoProficiencia+'",';
         dados+='"cursoValidadeTreinamento":"'+cursoValidadeTreinamento+'"}';
     
     var xhttp = new XMLHttpRequest();

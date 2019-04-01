@@ -80,7 +80,7 @@
                                                <td class="tabela-formata-linha-fonte">'.$treinamento['treinamento_descricao'].'</td>
                                                <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_formacao'].' h</td>
                                                <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'.$treinamento['treinamento_carga_horaria_reciclagem'].' h</td>
-                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'. $treinamento['treinamento_referencia'].'</td>
+                                               <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'. $treinamento['referencia'].'</td>
                                                <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte">'. $treinamento['treinamento_validade'].'</td>
                                                '.$dataAlteracao.'
                                                <td class="tabela-formata-linha-alinhamento tabela-formata-linha-fonte"><a href="treinamentosEditar.php?id='.$treinamento['treinamento_id'].'"<i class="fa fa-pencil"></i></td>

@@ -58,7 +58,7 @@
                                     <input type="number" id="cursoCargaHorariaFormacao" name="cursoCargaHorariaFormacao" class="form-control border-input" placeholder="Informe a carga horária" value="0" />
                                 </div>
                                 <div class="col-lg-4 col-sm-3">
-                                    <label for="cursoFormacaoPossuiPratica">Treinamento Prático ?</label>
+                                    <label for="cursoFormacaoPossuiPratica">Treinamento Prático</label>
                                     <select id="cursoFormacaoPossuiPratica" name="cursoFormacaoPossuiPratica" class="form-control border-input">
                                         <option>NAO</option>
                                         <option>SIM</option>
@@ -66,14 +66,14 @@
                                 </div>
                             </div>
                               <br>
-                              <div class="row" id="cursoCargaHorariaReciclagemExibir" hidden="">
+                             <div class="row" id="cursoCargaHorariaReciclagemExibir" hidden="">
                                 <div class="col-lg-4 col-sm-3"></div>
                                 <div class="col-lg-4 col-sm-3">
                                     <label for="cursoCargaHorariaReciclagem">Carga Horária Reciclagem</label>
                                     <input type="number" id="cursoCargaHorariaReciclagem" name="cursoCargaHorariaReciclagem" class="form-control border-input" placeholder="Informe a carga horária" value="0" />
                                 </div>
                                 <div class="col-lg-4 col-sm-1">
-                                   <label for="cursoReciclagemPossuiPratica">Treinamento Prático ?</label>
+                                   <label for="cursoReciclagemPossuiPratica">Treinamento Prático</label>
                                     <select id="cursoReciclagemPossuiPratica" name="cursoReciclagemPossuiPratica" class="form-control border-input">
                                         <option>NAO</option>
                                         <option>SIM</option>
@@ -99,8 +99,22 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-4 col-sm-1">
-                                    <label for="cursoValidadeTreinamento">Perioticidade</label>
+                                    <label for="cursoValidadeTreinamento">Periodicidade</label>
                                     <input type="number" id="cursoValidadeTreinamento" name="cursoValidadeTreinamento" class="form-control border-input" placeholder="Valor em meses" />
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-8 col-sm-2">
+                                    <label for="cursoProficiencia">Proficiência</label>
+                                    <textarea id="cursoProficiencia" name="cursoProficiencia" rows="" cols="16" class="form-control" placeholder="Informe as proficiências do instrutor para o curso"></textarea>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-6">
+                                    <label for="cursoConteudoProgramatico">Conteúdo Programatico</label>
+                                    <textarea id="cursoConteudoProgramatico" class="form-control" name="cursoConteudoProgramatico" rows="10" cols="100" placeholder="Informe o conteúdo programático do curso"></textarea>
                                 </div>
                             </div>
                             <br>

@@ -184,7 +184,7 @@ function gravarTreinamento($conn,$dados){
             # GRAVA TREINAMENTO #
             $gravar=$conn->prepare('INSERT INTO treinamentos VALUES (null , :codigo , :descricao , :cargaHorariaFormacao , :cargaHorariaReciclagem ,
                                     :validade , :reciclagem , :cadastradoPor , :dataCadastro , :alteradoPor , :dataAlterado , :referencia ,
-                                    :cursoFormacaoPossuiPratica , :cursoReciclagemPossuiPratica ,:status)');
+                                    :cursoFormacaoPossuiPratica , :cursoReciclagemPossuiPratica , :conteudoProgramatico , :proficiencia ,:status)');
             $gravar->bindValue(":codigo",$codigo);
             $gravar->bindValue(":descricao",$dados->cursoNome);
             $gravar->bindValue(":cargaHorariaFormacao",$dados->cursoCargaHorariaFormacao);
@@ -198,6 +198,8 @@ function gravarTreinamento($conn,$dados){
             $gravar->bindValue(":referencia",$dados->cursoReferencia);
             $gravar->bindValue(":cursoFormacaoPossuiPratica",$dados->cursoFormacaoPossuiPratica);
             $gravar->bindValue(":cursoReciclagemPossuiPratica",$dados->cursoReciclagemPossuiPratica);
+            $gravar->bindValue(":conteudoProgramatico",$dados->cursoConteudoProgramatico);
+            $gravar->bindValue(":proficiencia",$dados->cursoProficiencia);
             $gravar->bindValue(":status",1);
             $gravar->execute();
         
@@ -205,7 +207,8 @@ function gravarTreinamento($conn,$dados){
                 echo "true";
             }
         } catch (Exception $ex) {
-            return $ex->getMessage();
+//            return $ex->getMessage();
+            echo $ex->getMessage();
         }
 }
 
@@ -231,13 +234,14 @@ function gravarApagarTreinamento($conn,$dados){
 
 function gravarTreinamentoAtualizar($conn,$dados){
     
-     try {
+    
+    try {
        
           $gravar=$conn->prepare('UPDATE treinamentos SET treinamento_descricao = :descricao , treinamento_referencia = :referencia , 
                                 treinamento_carga_horaria_formacao =  :cargaHorariaFormacao , treinamento_carga_horaria_reciclagem = :cargaHorariaReciclagem,
                                 treinamento_validade = :validade  , treinamento_reciclagem = :reciclagem , treinamento_formacao_pratica = :formacaoPratica ,
-                                treinamento_alterado_por = :alteradoPor , treinamento_data_alteracao = :dataAlteracao ,
-                                treinamento_reciclagem_pratica = :reciclagemPratica WHERE treinamento_codigo = :codigo');
+                                treinamento_alterado_por = :alteradoPor , treinamento_data_alteracao = :dataAlteracao , treinamento_reciclagem_pratica = :reciclagemPratica , 
+                                treinamento_conteudo_programatico = :conteudoProgramatico , treinamento_proficientica = :proficiencia WHERE treinamento_codigo = :codigo');
           $gravar->bindValue(":descricao",$dados->cursoNome);
           $gravar->bindValue(":referencia",$dados->cursoReferencia);
           $gravar->bindValue(":cargaHorariaFormacao",$dados->cursoCargaHorariaFormacao);
@@ -248,6 +252,8 @@ function gravarTreinamentoAtualizar($conn,$dados){
           $gravar->bindValue(":dataAlteracao",date("Y-m-d H:i:s"));
           $gravar->bindValue(":formacaoPratica",$dados->cursoFormacaoPossuiPratica);
           $gravar->bindValue(":reciclagemPratica",$dados->cursoReciclagemPossuiPratica);
+          $gravar->bindValue(":conteudoProgramatico",$dados->cursoConteudoProgramatico);
+          $gravar->bindValue(":proficiencia",$dados->cursoProficiencia);
           $gravar->bindValue(":codigo",$dados->cursoCodigo);
           $gravar->execute();
           

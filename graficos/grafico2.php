@@ -1,47 +1,35 @@
-
- 
-?>
-
-<div id="grafico2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="grafico-supervisores" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 
 
 <script type="text/javascript">
 
-Highcharts.Color.prototype.parsers.push({
-	regex: /^[a-z]+$/,
-    parse: function (result) {
-    	var rgb = new RGBColor(result[0]);
-        if (rgb.ok) {
-        	return [rgb.r, rgb.g, rgb.b, 1]; // returns rgba to Highcharts
-        }
-    }
-});
-
-    Highcharts.chart('grafico2', {
+    Highcharts.chart('grafico-supervisores', {
         chart: {
             type: 'column'
         },
         title: {
-            text: 'Treinamentos Gerais'
+            text: 'DADOS POR SUPERVISÃO'
         },
-        
         subtitle: {
-            text: 'Origem : Planilha de Treinamentos'
+            text: 'Font: Human Resources'
         },
-        colors: ['red', 'orange', 'green', 'blue'],
         xAxis: {
             categories: [
-                'Jan',
-                'Feb',
-                'Mar'
+               'Supervisão',
+                'Supervisão',
+                'Supervisão',
+                'Supervisão',
+                'Supervisão',
+                'Supervisão',
+                'Supervisão'
             ],
             crosshair: true
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Colaboradores'
+                text: ''
             }
         },
         tooltip: {
@@ -52,29 +40,27 @@ Highcharts.Color.prototype.parsers.push({
             shared: true,
             useHTML: true
         },
-                
         plotOptions: {
             column: {
                 pointPadding: 0.2,
                 borderWidth: 0
             }
         },
-                
         series: [{
-                name: 'Total Treinamento',
-                data: [<?php echo $totalTreinamentos;?>, 71, 106]
+                name: 'Tokyo',
+                data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0]
 
             }, {
-                name: 'Vencidos',
-                data: [83, 78, 98]
+                name: 'New York',
+                data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0]
 
             }, {
-                name: 'Treinados',
-                data: [48, 38, 39]
+                name: 'London',
+                data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0]
 
             }, {
-                name: 'Em andamento',
-                data: [42, 33, 34]
+                name: 'Berlin',
+                data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4]
 
             }]
     });

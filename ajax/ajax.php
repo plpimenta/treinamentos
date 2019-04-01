@@ -268,6 +268,7 @@ if($_GET['cursoGravarAtualizar']){
     # RECEBE DADOS VIA PARAMETRO #
     $dados= json_decode($_GET['dados']);
     
+    
    
     # ENVIA PARA FUNCAO DE GRAVACAO #
     gravarTreinamentoAtualizar($conn,$dados);

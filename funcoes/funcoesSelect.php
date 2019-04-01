@@ -15,7 +15,8 @@ function selectTreinamentos($conn,$status){
     
     try {
     
-        $exib=$conn->prepare('SELECT * FROM treinamentos WHERE treinamento_status = :status');
+        $exib=$conn->prepare('SELECT treinamentos.*,treinamentos_referencias.treinamento_referencia_descricao as referencia FROM treinamentos INNER JOIN treinamentos_referencias ON 
+                            treinamentos.treinamento_referencia = treinamentos_referencias.treinamento_referencia_id WHERE treinamento_status = :status');
         $exib->bindValue(":status",$status);
         $exib->execute();
         return $exib;
@@ -283,4 +284,91 @@ function selectTreinamentosReferencias($conn){
         return $ex->getMessage();
     }
 }
+
+function selectTotalTreinamentosPorStatus($conn,$status,$data){
+    
+    if($data){
+        
+    }elseif($status){
+        
+        try {
+
+            $exib=$conn->prepare('SELECT count(treinamentos_id) as total FROM treinamentos_historico WHERE treinamentos_status = :status');
+            $exib->bindValue(":status",$status);
+            $exib->execute();
+            $exib=$exib->fetch();
+            
+            return $exib['total'];
+        } catch (Exception $ex) {
+            return $ex->getMessage();
+        }
+    }else{
+        
+        try {
+        
+            $exib=$conn->prepare('SELECT count(treinamentos_id) as total FROM treinamentos_historico WHERE 
+                                    treinamentos_desc_curso != :nr AND treinamentos_status != :status');
+            $exib->bindValue(":nr",'NR06 - USO, GUARDA E CONSERVAÇÃO EPI');
+            $exib->bindValue(":status",'REALIZADO');
+            $exib->execute();
+            $exib=$exib->fetch();
+            
+            $exib1=$conn->prepare('SELECT distinct treinamentos_matricula FROM treinamentos_historico WHERE treinamentos_desc_curso = :nr');
+            $exib1->bindValue(":nr",'NR06 - USO, GUARDA E CONSERVAÇÃO EPI');
+            $exib1->execute();
+            
+            return $exib['total'] + $exib1->rowcount();
+        } catch (Exception $ex) {
+            return $ex->getMessage();
+        }
+        
+    }
+}
+
+function selectNr06($conn){
+    $exib1=$conn->prepare('SELECT distinct treinamentos_matricula FROM treinamentos_historico WHERE treinamentos_desc_curso = :nr');
+    $exib1->bindValue(":nr",'NR06 - USO, GUARDA E CONSERVAÇÃO EPI');
+    $exib1->execute();
+    return $exib1->rowcount();
+}
+
+function selectFormarDiretoria($conn,$diretoria){
+    
+    try {
+        $exib=$conn->prepare("SELECT count(treinamentos_historico.treinamentos_id) as total FROM treinamentos_historico WHERE treinamentos_status = 'FORMAÇÃO' AND treinamentos_gerencia = '$diretoria'");
+        $exib->execute();
+        $exib=$exib->fetch();
+        return $exib['total'];
+    } catch (Exception $ex) {
+        return $ex->getMessage();
+    }
+}
+function selectVencidosDiretoria($conn,$diretoria){
+    
+    try {
+        $exib=$conn->prepare("SELECT count(treinamentos_historico.treinamentos_id) as total FROM treinamentos_historico WHERE treinamentos_status = 'VENCIDO' AND treinamentos_gerencia = '$diretoria'");
+        $exib->execute();
+        $exib=$exib->fetch();
+        return $exib['total'];
+    } catch (Exception $ex) {
+        return $ex->getMessage();
+    }
+}
+function selectTreinadosDiretoria($conn,$diretoria){
+    
+    try {
+        $exib=$conn->prepare("SELECT count(treinamentos_historico.treinamentos_id) as total FROM treinamentos_historico WHERE treinamentos_status = 'A VENCER' AND treinamentos_gerencia = '$diretoria'");
+        $exib->execute();
+        $exib=$exib->fetch();
+        
+        $exib1=$conn->prepare("SELECT treinamentos_historico.treinamentos_id FROM treinamentos_historico WHERE 
+                    treinamentos_historico.treinamentos_desc_curso = 'NR06 - USO, GUARDA E CONSERVAÇÃO EPI' AND treinamentos_gerencia = '$diretoria'");
+        $exib1->execute();
+        
+        return $exib['total'] + $exib1->rowcount();
+    } catch (Exception $ex) {
+        return $ex->getMessage();
+    }
+}
+
 ?>
